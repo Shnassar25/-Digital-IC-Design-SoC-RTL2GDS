@@ -1,0 +1,62 @@
+SpyGlass run started at 02:50:21 am on Sep 21 2026 
+
+SpyGlass Predictive Analyzer(R) - Version SpyGlass_vL-2016.06
+Last compiled on May 20 2016
+
+All Rights Reserved. Use, disclosure or duplication
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com.
+
+Loading Policy: spyglass (Version: SpyGlass_vL-2016.06) from path: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/spyglass
+Loading Shared library libspyglassrules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libspyglassrules-Linux4.spyso 
+Loading Shared library libsdcInitRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libsdcInitRules-Linux4.spyso 
+Loading Shared library librmerules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/librmerules-Linux4.spyso 
+Loading perl file for 'clock-reset' policy from path: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/clock/clock-reset-policy.pl
+Version of Policy 'clock-reset': SpyGlass_vL-2016.06
+Loading Shared library libclock-reset-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/clock/libclock-reset-Linux4.spyso 
+Loading Shared library libPwrRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/lowpower/libPwrRules-Linux4.spyso 
+Loading perl file for 'timing' policy from path: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/timing/timing-policy.pl
+Version of Policy 'timing': SpyGlass_vL-2016.06
+Loading Shared library libCoreRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libCoreRules-Linux4.spyso 
+Loading Shared library libtiming-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/timing/libtiming-Linux4.spyso 
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'ADVCLOCKS_GLITCH03_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'AC_QUALIFIER_USAGE' in "r" mode
+##FILEDEBUG[spyCloseFile]: File '' closed.
+##FILEDEBUG[spyOpenFileByName]: File Opening failed for file-label 'CDC_ADV_SYNC_SS' in "r" mode
+##FILEDEBUG[spyOpenFileByName]: File Opening failed for file-label 'CDC_ADV_SYNC_SS' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNCHRONOUS_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_UNSYNCHRONOUS_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_file' in "r" mode...
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNC_CELL_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_cell_file' in "r" mode...
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_QUASI_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'RDC_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'RDC_SYNC_CELL_FILE' in "r" mode
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_file' closed.
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_cell_file' closed.
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/sgdcdumpfile' in "r" mode...
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/sgdcdumpfile' closed.
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_info_file' in "r" mode...
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_info_file' closed.
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'ADVCLOCKS_GLITCH03_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'AC_QUALIFIER_USAGE' in "r" mode
+##FILEDEBUG[spyCloseFile]: File '' closed.
+##FILEDEBUG[spyOpenFileByName]: File Opening failed for file-label 'CDC_ADV_SYNC_SS' in "r" mode
+##FILEDEBUG[spyOpenFileByName]: File Opening failed for file-label 'CDC_ADV_SYNC_SS' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNCHRONOUS_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_UNSYNCHRONOUS_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_file' in "r" mode...
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_SYNC_CELL_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_cell_file' in "r" mode...
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'CK_QUASI_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'RDC_SYNC_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'RDC_SYNC_CELL_FILE' in "r" mode
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_file' closed.
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_sync_rst_cell_file' closed.
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/sgdcdumpfile' in "r" mode...
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/sgdcdumpfile' closed.
+##FILEDEBUG[spyOpenFile]: Opening file './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_info_file' in "r" mode...
+##FILEDEBUG[spyCloseFile]: File './spyglass-1/cdc/clock_reset_integrity/spyglass_spysch/clock-reset/clock_reset_info_file' closed.
+0 {Rule-checking completed with warnings}

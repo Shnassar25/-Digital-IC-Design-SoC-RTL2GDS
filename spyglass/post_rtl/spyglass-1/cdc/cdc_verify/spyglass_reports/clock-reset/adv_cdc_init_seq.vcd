@@ -1,0 +1,48 @@
+$date
+	Sun Sep 27 06:39:32 2026
+
+$end
+$version
+	BMC-0.1
+$end
+$timescale
+	1ps
+$end
+
+$var integer 16 verification_cycle verification_cycle $end
+$scope module SYS_TOP $end
+
+$var wire 1 & REF_CLK $end
+$var wire 1 ' UART_CLK $end
+$var wire 1 ( RX_IN $end
+$var wire 1 ) RST $end
+$var wire 1 * CLK_DIV_EN $end
+$scope module CLK_DIV_TX $end
+
+$var wire 1 + Odd $end
+$upscope $end
+
+$scope module CLK_DIV_RX $end
+
+$var wire 1 , Odd $end
+$upscope $end
+
+$scope module reg_file $end
+
+$var wire 12 - Reg_File [30:19] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#10000
+b0000000000000000 verification_cycle
+
+0)
+1*
+0+
+1,
+b1XXXXXXXXXX1 -
+
+#20000

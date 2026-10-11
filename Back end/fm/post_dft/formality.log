@@ -1,0 +1,30 @@
+Info:  Net Ref:/WORK/SYS_TOP/SO[2] is undriven.
+Info:  Net Ref:/WORK/SYS_TOP/SO[1] is undriven.
+Info:  Net Ref:/WORK/SYS_TOP/SO[0] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0/divide_by_0 is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_add_1/CO is undriven.
+Info:  guide_transformation 72 (Line: 426) Retrying with unread processing enabled.
+Info:  SVF Operation 72 (Line: 426) - transformation_share.  Status: rejected
+
+Info:  guide_transformation 73 (Line: 452)  Unmatched boundary nodes.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_rst_uart/U1" in design 'SYS_TOP'.
+Info:  SVF Operation 96 (Line: 748) - uniquify.  Status: rejected
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_rst_ref/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_rst/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_uart_tx/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_uart_rx/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_uart/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 96 (Line: 748)  Cannot find object "mux_ref/U1" in design 'SYS_TOP'.
+Info:  guide_uniquify 104 (Line: 799)  Cannot find object "alu/dp_cluster_0/mult_41" in design 'SYS_TOP'.
+Info:  Pre-verification of Ref:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4/div_45 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4/mult_41 SUCCEEDED.

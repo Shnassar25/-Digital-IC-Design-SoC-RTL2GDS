@@ -1,0 +1,288 @@
+40
+REF_CLK
+UART_CLK
+CLK_GATED
+U0_CLK_GATING
+RST
+RX_IN
+REG2_UART_CONFIG[0]
+REG2_UART_CONFIG[1]
+REG2_UART_CONFIG[2]
+REG2_UART_CONFIG[3]
+REG2_UART_CONFIG[4]
+REG2_UART_CONFIG[5]
+REG2_UART_CONFIG[6]
+REG2_UART_CONFIG[7]
+REG3_DIV_RATIO[0]
+REG3_DIV_RATIO[1]
+REG3_DIV_RATIO[2]
+REG3_DIV_RATIO[3]
+REG3_DIV_RATIO[4]
+REG3_DIV_RATIO[5]
+REG3_DIV_RATIO[6]
+REG3_DIV_RATIO[7]
+PRESCALE_RX[0]
+PRESCALE_RX[1]
+PRESCALE_RX[2]
+PRESCALE_RX[3]
+PRESCALE_RX[4]
+PRESCALE_RX[5]
+PRESCALE_RX[6]
+PRESCALE_RX[7]
+CLK_DIV_EN
+Odd
+CLK_DIV_TX
+CLK_DIV_RX
+Reg_File[19]
+reg_file
+Reg_File[30]
+SYNC_RST
+RST_SYNC_REF
+RST_SYNC_UART
+1
+final_system.sgdc
+3
+113
+-1
+1
+4 0
+0 56
+0
+132
+-1
+1
+4 0
+0 57
+0
+141
+35
+0
+-1
+1
+11 0
+0 9
+0
+1
+-1
+2
+11 0
+0 10
+11 0
+0 26
+0
+3
+1
+2
+-1
+1
+14 0
+0 14
+0
+4
+-1
+1
+11 0
+0 21
+0
+5
+-1
+1
+11 0
+0 26
+0
+6
+-1
+1
+8 0
+0 32
+0
+7
+-1
+1
+8 0
+0 32
+0
+8
+-1
+1
+8 0
+0 32
+0
+9
+-1
+1
+8 0
+0 32
+0
+10
+-1
+1
+8 0
+0 32
+0
+11
+-1
+1
+8 0
+0 32
+0
+12
+-1
+1
+8 0
+0 32
+0
+13
+-1
+1
+8 0
+0 32
+0
+14
+-1
+1
+8 0
+0 33
+0
+15
+-1
+1
+8 0
+0 33
+0
+16
+-1
+1
+8 0
+0 33
+0
+17
+-1
+1
+8 0
+0 33
+0
+18
+-1
+1
+8 0
+0 33
+0
+19
+-1
+1
+8 0
+0 33
+0
+20
+-1
+1
+8 0
+0 33
+0
+21
+-1
+1
+8 0
+0 33
+0
+22
+-1
+1
+8 0
+0 34
+0
+23
+-1
+1
+8 0
+0 34
+0
+24
+-1
+1
+8 0
+0 34
+0
+25
+-1
+1
+8 0
+0 34
+0
+26
+-1
+1
+8 0
+0 34
+0
+27
+-1
+1
+8 0
+0 34
+0
+28
+-1
+1
+8 0
+0 34
+0
+29
+-1
+1
+8 0
+0 34
+0
+30
+-1
+1
+8 0
+0 42
+0
+32
+1
+31
+-1
+1
+8 0
+0 43
+0
+33
+1
+31
+-1
+1
+8 0
+0 44
+0
+35
+2
+34
+-1
+1
+8 0
+0 46
+0
+36
+-1
+1
+8 0
+0 47
+0
+38
+1
+37
+-1
+1
+14 0
+0 53
+0
+39
+1
+37
+-1
+1
+14 0
+0 54
+0

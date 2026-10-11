@@ -1,0 +1,13 @@
+
+clock@@name@@SYS_TOP.REF_CLK@@domain@@REF_DOMAIN@@
+clock@@name@@SYS_TOP.UART_CLK@@domain@@UART_DOMAIN@@
+clock@@name@@SYS_TOP.U0_CLK_GATING.CLK_GATED@@domain@@REF_DOMAIN@@
+reset@@name@@RST@@value@@0@@async@@
+quasi_static@@SYS_TOP.REG2_UART_CONFIG[7:0]@@
+quasi_static@@SYS_TOP.REG3_DIV_RATIO[7:0]@@
+quasi_static@@SYS_TOP.PRESCALE_RX[7:0]@@
+set_case_analysis@@SYS_TOP.CLK_DIV_EN@@1@@
+set_case_analysis@@SYS_TOP.CLK_DIV_TX.Odd@@0@@
+set_case_analysis@@SYS_TOP.CLK_DIV_RX.Odd@@1@@
+set_case_analysis@@SYS_TOP.reg_file.Reg_File[19]@@1@@
+set_case_analysis@@SYS_TOP.reg_file.Reg_File[30]@@1@@

@@ -1,0 +1,2 @@
+waive -rule W164a -msg q%LHS: 'ADDR_S' width 4 is less than RHS: 'reg_addr' width 8 in assignment [Hierarchy: ':SYS_TOP:control@SYS_CTRL']%
+waive -rule W164a -msg q%LHS: 'ADDR_S' width 4 is less than RHS: 'reg_addr' width 8 in assignment [Hierarchy: ':SYS_TOP:control@SYS_CTRL']%

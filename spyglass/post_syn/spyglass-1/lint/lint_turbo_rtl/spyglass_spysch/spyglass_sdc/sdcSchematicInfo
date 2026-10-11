@@ -1,0 +1,17 @@
+
+##File_ID::1
+##File_Name::../../syn/sdc/SYS_TOP.sdc@@Design_Unit::SYS_TOP
+##Line_no::9@@design@@SYS_TOP
+##Line_no::10@@port@@RX_IN
+##Line_no::11@@port@@TX_OUT
+##Line_no::12@@port@@PAR_ERR
+##Line_no::13@@port@@STOP_ERR
+##Line_no::14@@port@@REF_CLK
+##Line_no::22@@port@@UART_CLK
+##Line_no::30@@pin@@CLKG/CLK_GATED@@clock@@REF_CLK{##port##REF_CLK}
+##Line_no::33@@pin@@CLK_DIV_RX/o_div_clk@@clock@@UART_CLK{##port##UART_CLK}
+##Line_no::36@@pin@@CLK_DIV_TX/o_div_clk@@clock@@UART_CLK{##port##UART_CLK}
+##Line_no::39@@clock@@UART_RX_CLK{##pin##CLK_DIV_RX/o_div_clk}@@port@@RX_IN
+##Line_no::40@@clock@@UART_TX_CLK{##pin##CLK_DIV_TX/o_div_clk}@@port@@TX_OUT
+##Line_no::41@@clock@@UART_RX_CLK{##pin##CLK_DIV_RX/o_div_clk}@@port@@PAR_ERR
+##Line_no::42@@clock@@UART_RX_CLK{##pin##CLK_DIV_RX/o_div_clk}@@port@@STOP_ERR

@@ -1,0 +1,5 @@
+INPUT@@/home/ICer/ASS/Final_System/spyglass/post_syn/spyglass-1/Design_Read/spyglass_reports@@/home/ICer/ASS/Final_System/spyglass/post_syn/spyglass-1/html_reports/data_files/@@SYS_TOP@@Design_Read@@
+COPY@@/home/ICer/ASS/Final_System/spyglass/post_syn/spyglass-1/Design_Read/spyglass_reports/moresimple.rpt@@data_files/SYS_TOP_Design_Read_moresimple.rpt@@
+COPY@@/home/ICer/ASS/Final_System/spyglass/post_syn/spyglass-1/Design_Read/spyglass_reports/no_msg_reporting_rules.rpt@@data_files/SYS_TOP_Design_Read_no_msg_reporting_rules.rpt@@
+PROCESS@@sdc2sgdc@@SpyGlass
+COPY@@/home/ICer/ASS/Final_System/spyglass/post_syn/spyglass-1/Design_Read/spyglass.log@@data_files/SYS_TOP_Design_Read_spyglass.log@@

@@ -1,0 +1,140 @@
+read_file -type sgdc final_system.sgdc
+read_file -type verilog {../../rtl/RTL/Alu.v ../../rtl/RTL/CLK_DIV_50.v ../../rtl/RTL/CLK_DIV_MUX.v ../../rtl/RTL/CLK_GATING.v ../../rtl/RTL/CTRL_SYS.v ../../rtl/RTL/data_sync.v ../../rtl/RTL/PULSE_GEN.v ../../rtl/RTL/REG_file.v ../../rtl/RTL/RST_SYNC.v ../../rtl/RTL/SYS_TOP.v ../../rtl/RTL/UART/UART.v ../../rtl/RTL/UART/UART_RX/Data_Sampling.v ../../rtl/RTL/UART/UART_RX/Deserializer.v ../../rtl/RTL/UART/UART_RX/edge_bit_cont.v ../../rtl/RTL/UART/UART_RX/FSM_RX.v ../../rtl/RTL/UART/UART_RX/parity_check.v ../../rtl/RTL/UART/UART_RX/Start_check.v ../../rtl/RTL/UART/UART_RX/Stop_check.v ../../rtl/RTL/UART/UART_RX/UART_RX.v ../../rtl/RTL/UART/UART_TX/FSM.v ../../rtl/RTL/UART/UART_TX/Mux.v ../../rtl/RTL/UART/UART_TX/Parity_Calc.v ../../rtl/RTL/UART/UART_TX/Serializer.v ../../rtl/RTL/UART/UART_TX/UART_TX.v ../../rtl/RTL/FIFO_ASYNC/ASYNC_FIFO.v ../../rtl/RTL/FIFO_ASYNC/BIT_SYNC.v ../../rtl/RTL/FIFO_ASYNC/FIFO_MEM_CNTRL.v ../../rtl/RTL/FIFO_ASYNC/FIFO_RD.v ../../rtl/RTL/FIFO_ASYNC/FIFO_WR.v}
+read_file -type gateslib ../../std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib
+
+
+
+current_goal Design_Read -alltop
+
+
+set_option designread_enable_synthesis yes
+compile_design -force
+
+compile_design -force
+
+current_goal lint/lint_rtl -alltop
+
+
+
+set_goal_option ignorerule NoXInCase-ML
+remove_goal_option ignorerules
+set_goal_option addrule NoXInCase-ML
+
+
+current_goal lint/lint_rtl -alltop
+run_goal
+
+
+
+
+read_file -type awl ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule STARC05-1.4.3.4 -comment {Created by ICer on 21-Sep-2026 03:01:03}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+
+
+
+run_goal
+
+
+
+current_goal lint/lint_rtl -alltop
+run_goal
+current_goal lint/lint_turbo_rtl -alltop
+run_goal
+current_goal lint/lint_rtl -alltop
+
+
+
+
+
+
+
+
+current_goal lint/lint_functional_rtl -alltop
+run_goal
+
+
+
+
+
+
+current_goal lint/lint_abstract -alltop
+run_goal
+
+
+
+
+
+
+current_goal cdc/cdc_setup_check -alltop
+run_goal
+
+
+
+
+run_goal
+
+run_goal
+
+gui_select_message -rule Clock_info03a -msg {Clock-Net 'SYS_TOP.REF_CLK' is unconstrained}
+run_goal
+
+gui_select_message -rule Setup_port01 -msg {Port coverage for top design unit 'SYS_TOP' is: '2' (50.00 %) port(s) not fully constrained}
+run_goal
+
+gui_select_message -rule Setup_port01 -msg {Port coverage for top design unit 'SYS_TOP' is: '1' (25.00 %) port(s) not fully constrained}
+gui_select_message -rule Clock_check07 -msg {Clock domain propagation for clock 'SYS_TOP.UART_CLK' has reached clock 'SYS_TOP.CLK_DIV_TX.o_div_clk' of another domain. Halting further propagation of clock 'SYS_TOP.UART_CLK' on this path}
+gui_open_schematic -is
+gui_expand_schematic {pin CLK_DIV_TX o_div_clk output}
+read_file -type awl ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 21-Sep-2026 03:14:55}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+
+
+
+gui_select_message -rule Clock_check07 -msg {Clock domain propagation for clock 'SYS_TOP.UART_CLK' has reached clock 'SYS_TOP.CLK_DIV_RX.o_div_clk' of another domain. Halting further propagation of clock 'SYS_TOP.UART_CLK' on this path}
+gui_open_schematic -is
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Clock_check07 -comment {Created by ICer on 21-Sep-2026 03:18:41}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+
+
+
+run_goal
+
+
+
+current_goal cdc/clock_reset_integrity -alltop
+run_goal
+
+
+
+
+save_project -force /home/ICer/ASS/Final_System/spyglass/post_syn/lint.prj
+gui_exit
+gui_exit

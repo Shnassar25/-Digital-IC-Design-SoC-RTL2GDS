@@ -1,0 +1,58 @@
+
+current_design SYS_TOP
+
+#sdc_data -file "../../syn/sdc/SYS_TOP.sdc"
+
+####################################################################################
+                  #### Section 1 : Clock Definition ####
+#################################################################################### 
+# 1. Primary Clocks
+clock -name "REF_CLK"  -domain REF_DOMAIN
+clock -name "UART_CLK" -domain UART_DOMAIN
+
+# 2. Generated Clocks 
+clock -name "CLK_DIV_TX.o_div_clk" -domain TX_DOMAIN
+clock -name "CLK_DIV_RX.o_div_clk" -domain RX_DOMAIN
+clock -name "U0_CLK_GATING.CLK_GATED"       -domain REF_DOMAIN
+
+####################################################################################
+                  #### Section 2 : Reset Definition ####
+####################################################################################
+
+reset -name "RST" -value 0 -async
+
+####################################################################################
+             #### Section 3 : set input/output clock domains  ####
+####################################################################################
+input  -name "RX_IN"    -clock "UART_CLK"
+
+####################################################################################
+             #### Section 4 : Quasi static signals  ####
+####################################################################################
+
+quasi_static -name "REG2_UART_CONFIG"
+quasi_static -name "REG3_DIV_RATIO"
+quasi_static -name "PRESCALE_RX"
+
+####################################################################################
+             #### Section 5 : set_case_analysis  ####
+####################################################################################
+
+#set_case_analysis -name SYS_TOP.TEST_MODE -value 0
+
+####################################################################################
+             #### Section 6 : DATA/RESET Synchronizers  ####
+####################################################################################
+
+reset_synchronizer -name "RST_SYNC_REF.SYNC_RST"
+reset_synchronizer -name "RST_SYNC_UART.SYNC_RST"
+
+sync_cell -name "BIT_SYNC"
+sync_cell -name "Data_SYNC"
+
+####################################################################################
+             #### Section 7 : Constraints  ####
+####################################################################################
+#cdc_attribute -unrelated  {top.u_async_fifo.gray_rd_ptr top.ctrl_mult_start}
+#cdc_attribute -unrelated  {top.u_async_fifo.gray_w_ptr top.mult_busy}
+

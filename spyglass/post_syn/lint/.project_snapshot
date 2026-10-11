@@ -1,0 +1,76 @@
+##Data Import Section
+
+read_file -type sgdc final_system.sgdc
+read_file -type verilog ../../rtl/RTL/Alu.v
+read_file -type verilog ../../rtl/RTL/CLK_DIV_50.v
+read_file -type verilog ../../rtl/RTL/CLK_DIV_MUX.v
+read_file -type verilog ../../rtl/RTL/CLK_GATING.v
+read_file -type verilog ../../rtl/RTL/CTRL_SYS.v
+read_file -type verilog ../../rtl/RTL/data_sync.v
+read_file -type verilog ../../rtl/RTL/PULSE_GEN.v
+read_file -type verilog ../../rtl/RTL/REG_file.v
+read_file -type verilog ../../rtl/RTL/RST_SYNC.v
+read_file -type verilog ../../rtl/RTL/SYS_TOP.v
+read_file -type verilog ../../rtl/RTL/UART/UART.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/Data_Sampling.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/Deserializer.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/edge_bit_cont.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/FSM_RX.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/parity_check.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/Start_check.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/Stop_check.v
+read_file -type verilog ../../rtl/RTL/UART/UART_RX/UART_RX.v
+read_file -type verilog ../../rtl/RTL/UART/UART_TX/FSM.v
+read_file -type verilog ../../rtl/RTL/UART/UART_TX/Mux.v
+read_file -type verilog ../../rtl/RTL/UART/UART_TX/Parity_Calc.v
+read_file -type verilog ../../rtl/RTL/UART/UART_TX/Serializer.v
+read_file -type verilog ../../rtl/RTL/UART/UART_TX/UART_TX.v
+read_file -type verilog ../../rtl/RTL/FIFO_ASYNC/ASYNC_FIFO.v
+read_file -type verilog ../../rtl/RTL/FIFO_ASYNC/BIT_SYNC.v
+read_file -type verilog ../../rtl/RTL/FIFO_ASYNC/FIFO_MEM_CNTRL.v
+read_file -type verilog ../../rtl/RTL/FIFO_ASYNC/FIFO_RD.v
+read_file -type verilog ../../rtl/RTL/FIFO_ASYNC/FIFO_WR.v
+read_file -type gateslib ../../std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib
+
+##Common Options Section
+
+set_option projectwdir .
+set_option language_mode mixed
+set_option designread_enable_synthesis yes
+set_option designread_disable_flatten no
+set_option active_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+##Goal Setup Section
+
+current_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+current_goal lint/lint_rtl -alltop
+read_file -type awl ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option addrules { NoXInCase-ML }
+set_goal_option sdc2sgdc yes
+set_goal_option default_waiver_file ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+
+
+current_goal lint/lint_turbo_rtl -alltop
+set_goal_option sdc2sgdc yes
+
+
+current_goal lint/lint_functional_rtl -alltop
+set_goal_option sdc2sgdc yes
+
+
+current_goal lint/lint_abstract -alltop
+set_goal_option sdc2sgdc yes
+
+
+current_goal cdc/cdc_setup_check -alltop
+read_file -type awl ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+set_goal_option sdc2sgdc yes
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+
+
+current_goal cdc/clock_reset_integrity -alltop
+set_goal_option sdc2sgdc yes
+

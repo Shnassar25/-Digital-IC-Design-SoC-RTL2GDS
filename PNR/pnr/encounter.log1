@@ -1,0 +1,286 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/Cadence/SOC/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Thu Oct  8 08:34:36 2026 (mem=62.2M) ---
+--- Running on localhost.localdomain (x86_64 w/Linux 2.6.32-431.29.2.el6.x86_64) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> restoreDesign /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat SYS_TOP
+Reading config file - /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.conf
+
+Loading Lef file /home/ahesham/Project/pnr/../std_cells/lef/tsmc13fsg_6lm_tech.lef...
+
+Loading Lef file /home/ahesham/Project/pnr/../std_cells/lef/tsmc13_m_macros.lef...
+Set DBUPerIGU to M2 pitch 820.
+Initializing default via types and wire widths ...
+
+Loading Lef file /home/ahesham/Project/pnr/import/SYS_TOP_6.lef...
+**WARN: (SOCLF-246):	The 'UNITS' attribute should be set
+in the first lef file (technology lef). There is an attempt to set it
+in subsequent lef files which will be ignored.
+**WARN: (SOCLF-46):	Class CORE macro 'SYS_TOP' has no SITE statement defined.
+Class CORE macros require a SITE statement. The SITE FE_CORE_0 was
+created and will be used for this macro, using height 220.6000 that
+matches the macro SIZE height, and width 0.4100 that matches the
+m2 routing pitch. Define the site explicitly in the LEF file, to
+this message in the future.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Thu Oct  8 08:35:11 2026
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM6 GENERATE
+viaInitial ends at Thu Oct  8 08:35:11 2026
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**WARN: (SOCDB-2079):	fterm test_si6 of cell SYS_TOP is not defined in LEF.
+Reading verilog netlist '/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.v'
+Inserting temporary buffers to remove assignment statements.
+Non-leaf cell SYS_TOP will be treated as a leaf cell.
+
+*** Memory Usage v0.144 (Current mem = 189.113M, initial mem = 62.238M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=189.1M) ***
+Set top cell to SYS_TOP.
+Reading max timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c' 
+Reading min timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c' 
+Reading max timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+Reading min timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+**WARN: (SOCSYC-2):	Timing is not defined for cell SYS_TOP.
+*** End library_loading (cpu=0.15min, mem=90.8M, fe_cpu=0.27min, fe_mem=279.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell SYS_TOP ...
+*** Netlist is unique.
+** info: there are 2531 modules.
+** info: there are 2325 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 280.164M, initial mem = 62.238M) ***
+CTE reading timing constraint file '/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.pt' ...
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-286):	Library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c is not in the min library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.1 mem=286.5M) ***
+*info - Done with setDoAssign with 32 assigns removed and 0 assigns could not be removed.
+Total number of combinational cells: 433
+Total number of sequential cells: 174
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2M BUFX10M BUFX12M BUFX14M BUFX16M BUFX18M BUFX20M BUFX24M BUFX32M BUFX3M CLKBUFX1M BUFX4M BUFX5M BUFX6M BUFX8M CLKBUFX12M CLKBUFX16M CLKBUFX20M CLKBUFX24M CLKBUFX2M CLKBUFX3M CLKBUFX32M CLKBUFX40M CLKBUFX4M CLKBUFX6M CLKBUFX8M
+Total number of usable buffers: 26
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1M CLKINVX12M CLKINVX16M CLKINVX20M CLKINVX24M CLKINVX2M CLKINVX3M CLKINVX32M CLKINVX40M CLKINVX4M CLKINVX6M CLKINVX8M INVX10M INVX12M INVX14M INVX16M INVX18M INVX2M INVX1M INVX20M INVX24M INVX32M INVX4M INVX3M INVX6M INVX5M INVX8M INVXLM
+Total number of usable inverters: 28
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1M DLY1X4M DLY2X1M DLY2X4M DLY3X1M DLY3X4M DLY4X1M DLY4X4M
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 0.1 ps.
+Reading Capacitance Table File /home/ahesham/Project/pnr/../std_cells/captables/tsmc13fsg.capTbl ...
+Cap Table was created using First Encounter 08.10-p004_1.
+Process name: tsmc13fsg.
+**WARN: (SOCEXT-2760):	Layer M7 in the cap table is larger than max number of layers, 6, defined in the LEF file.
+**WARN: (SOCEXT-2771):	Top layer, M7,  of Via via6 in the cap table is larger than max number of layers, 6, defined in the LEF file.
+**WARN: (SOCEXT-2710):	Cap table for M7 is ignored, the layer is not defined in the design.
+#WARNING (NRDB-21) The number of routing layer 6 in the database does not match with the value of 10 in the Extended Cap Table file.
+Loading preference file /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/enc.pref.tcl ...
+*info: Setting setup target slack to 0.000
+*info: Hold target slack is 0.000
+#WARNING (NRIF-64) When droutePostRouteSwapVia is NOT set to 'false' or 'none', the tool just does post route via optimization and it will NOT do normal routing.
+Reading floorplan file - /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.fp (mem = 287.8M).
+Set FPlanBox to (0 0 480220 437580)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** End loading floorplan (cpu = 0:00:00.1, mem = 289.9M) ***
+loading place ...
+Reading placement file - /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.place.gz.
+Reading stdCellPlacement "/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.place.gz" ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=290.2M) ***
+Total net length = 5.748e+04 (3.050e+04 2.698e+04) (ext = 2.296e+03)
+loading route ...
+Reading routing file - /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.route.gz.
+Reading Cadence  routing data (Created by First Encounter v08.10-p004_1 on Tue Oct  6 20:45:11 2026 Format: 7.0)...
+Suppress "**WARN ..." messages.
+routingBox: (0 0) (480220 437580)
+coreBox:    (12300 12300) (468220 425580)
+Un-suppress "**WARN ..." messages.
+*** Total 2452 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=291.8M) ***
+
+Reading clock tree spec file '/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.ctstch' ...
+
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.146248(V=0.139886 H=0.15261) (ff/um) [7.31238e-05]
+Est. Res                : 1.15(V=1.05 H=1.25)(ohm/um) [0.000575]
+Est. Via Res            : 4(ohm) [7.75]
+Est. Via Cap            : 0.154152(ff)
+M1(H) w=0.16(um) s=0.18(um) p=0.41(um) es=0.66(um) cap=0.157(ff/um) res=2.37(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=3.75(ohm) viaCap=0.164232(ff)
+M3(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=4(ohm) viaCap=0.160393(ff)
+M4(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.14(ff/um) res=1.05(ohm/um) viaRes=4(ohm) viaCap=0.154152(ff)
+M5(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.106(ff/um) res=1.05(ohm/um) viaRes=2.4(ohm) viaCap=0.130276(ff)
+M6(V) w=0.4(um) s=0.42(um) p=0.82(um) es=1.24(um) cap=0.135(ff/um) res=0.525(ohm/um) viaRes=2.33333(ohm) viaCap=0.222205(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.146248(V=0.139886 H=0.15261) (ff/um) [7.31238e-05]
+Est. Res                : 1.15(V=1.05 H=1.25)(ohm/um) [0.000575]
+Est. Via Res            : 4(ohm) [7.75]
+Est. Via Cap            : 0.154152(ff)
+M1(H) w=0.16(um) s=0.18(um) p=0.41(um) es=0.66(um) cap=0.157(ff/um) res=2.37(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=3.75(ohm) viaCap=0.164232(ff)
+M3(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=4(ohm) viaCap=0.160393(ff)
+M4(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.14(ff/um) res=1.05(ohm/um) viaRes=4(ohm) viaCap=0.154152(ff)
+M5(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.106(ff/um) res=1.05(ohm/um) viaRes=2.4(ohm) viaCap=0.130276(ff)
+M6(V) w=0.4(um) s=0.42(um) p=0.82(um) es=1.24(um) cap=0.135(ff/um) res=0.525(ohm/um) viaRes=2.33333(ohm) viaCap=0.222205(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: SCAN_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+AutoClockRootPin 2: UART_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+AutoClockRootPin 3: REF_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.1, real=0:00:00.0, mem=299.5M) ***
+<CMD> saveFPlan /home/ahesham/Project/pnr/SYS_TOP.fp
+<CMD> savePlace /home/ahesham/Project/pnr/SYS_TOP.place.gz
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=301.3M) ***
+
+*** Memory Usage v0.144 (Current mem = 301.473M, initial mem = 62.238M) ***
+--- Ending "First Encounter" (totcpu=0:00:23.7, real=0:01:43, mem=301.5M) ---

@@ -1,0 +1,69 @@
+
+current_design SYS_TOP
+
+sdc_data -file ../../syn/sdc/SYS_TOP.sdc
+####################################################################################
+                  #### Section 1 : Clock Definition ####
+#################################################################################### 
+# Primary clocks
+clock -name "REF_CLK"  -domain REF_DOMAIN -period 20 -waveform {0 10}
+clock -name "UART_CLK" -domain UART_DOMAIN -period 271.2 -waveform {0 135.6}
+
+# 2. Generated Clocks 
+
+#clock -name "U0_CLK_GATING.CLK_GATED" -domain REF_DOMAIN -period 20 -waveform {0 10}
+
+
+####################################################################################
+                  #### Section 2 : Reset Definition ####
+####################################################################################
+
+reset -name "RST" -value 0 -async
+
+####################################################################################
+             #### Section 3 : set input/output clock domains  ####
+####################################################################################
+input -name "RX_IN" -clock "UART_CLK"
+
+####################################################################################
+             #### Section 4 : Quasi static signals  ####
+####################################################################################
+
+quasi_static -name "REG2_UART_CONFIG"
+quasi_static -name "REG3_DIV_RATIO"
+quasi_static -name "PRESCALE_RX"
+
+####################################################################################
+             #### Section 5 : set_case_analysis  ####
+####################################################################################
+
+#set_case_analysis -name SYS_TOP.TEST_MODE -value 0
+
+set_case_analysis -name SYS_TOP.CLK_DIV_EN -value 1
+set_case_analysis -name SYS_TOP.CLK_DIV_TX.Odd -value 0
+set_case_analysis -name SYS_TOP.CLK_DIV_RX.Odd -value 1
+
+set_case_analysis -name SYS_TOP.reg_file.Reg_File[2][3] -value 1
+set_case_analysis -name SYS_TOP.reg_file.Reg_File[3][6] -value 1
+
+####################################################################################
+             #### Section 6 : DATA/RESET Synchronizers  ####
+####################################################################################
+
+reset_synchronizer -name "RST_SYNC_REF.SYNC_RST"
+reset_synchronizer -name "RST_SYNC_UART.SYNC_RST"
+
+sync_cell -name "BIT_SYNC"
+sync_cell -name "Data_SYNC"
+
+####################################################################################
+             #### Section 7 : Constraints  ####
+####################################################################################
+cdc_attribute -unrelated  {SYS_TOP.fifo_async.W_ptr SYS_TOP.fifo_async.W_ptr}
+cdc_attribute -unrelated {SYS_TOP.fifo_async.u_fifo_mem.MEM SYS_TOP.uart.u_uart_tx.SER.reg_data}
+cdc_attribute -unrelated \
+    SYS_TOP.fifo_async.u_sync_r2w.sync_reg[0][4:0] \
+    SYS_TOP.D_SYNC.sync_enable_reg[0] \
+    SYS_TOP.D_SYNC.SYNC_BUS[7:0]
+
+

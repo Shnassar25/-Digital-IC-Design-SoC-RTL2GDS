@@ -1,0 +1,127 @@
+2 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+25
+3 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+26
+4 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+27
+5 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+28
+6 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+29
+7 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+30
+8 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+31
+9 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+32
+10 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+33
+11 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+34
+12 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+35
+13 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+36
+14 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+37
+15 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+38
+16 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+39
+17 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+40
+18 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+41
+19 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+42
+20 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+43
+21 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+44
+22 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+45
+23 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+46
+24 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+47
+25 "Domain_Matrix01" 1
+"Open_Sp_Sheet"
+["./spyglass-1/Design_Read/spyglass_reports/sdc2sgdc/Domain/clock_SYS_TOP_domain_matrix_0.csv@@noofheadercol:3"]
+26 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+1
+27 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+2
+28 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+3
+29 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+4
+30 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+5
+31 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+6
+32 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+7
+33 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+8
+34 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+9
+36 "SDC_Mapping01" 1
+"Open_Sp_Sheet"
+["./spyglass-1/Design_Read/spyglass_reports/sdc2sgdc/sdcMapping.csv"]
+-1 "DetectTopDesignUnits" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "Domain_Matrix01" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ElabSummary" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "SDC2SGDC_INFO" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "SDC_Mapping01" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"

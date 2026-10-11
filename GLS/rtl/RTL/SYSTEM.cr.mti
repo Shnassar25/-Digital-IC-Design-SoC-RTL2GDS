@@ -1,0 +1,204 @@
+{D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_DIV_50.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_DIV_50.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Clk_div_50
+
+Top level modules:
+	Clk_div_50
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/ASYNC_FIFO.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/ASYNC_FIFO.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ASYNC_FIFO
+
+Top level modules:
+	ASYNC_FIFO
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Start_check.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Start_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Start_check
+
+Top level modules:
+	Start_check
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/Alu.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/Alu.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Alu_16_bit
+
+Top level modules:
+	Alu_16_bit
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/PULSE_GEN.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/PULSE_GEN.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PULSE_GEN
+
+Top level modules:
+	PULSE_GEN
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_GATING.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_GATING.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CLK_GATING
+
+Top level modules:
+	CLK_GATING
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Serializer.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Serializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Serializer
+
+Top level modules:
+	Serializer
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/CTRL_SYS.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/CTRL_SYS.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_CTRL
+
+Top level modules:
+	SYS_CTRL
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_WR.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_WR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FIFO_WR
+
+Top level modules:
+	FIFO_WR
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_MEM_CNTRL.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_MEM_CNTRL.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FIFO_MEM_CNTRL
+
+Top level modules:
+	FIFO_MEM_CNTRL
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/UART_RX.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/UART_RX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_RX
+
+Top level modules:
+	UART_RX
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Parity_Calc.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Parity_Calc.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Parity_Calc
+
+Top level modules:
+	Parity_Calc
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/RST_SYNC.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/RST_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RST_SYNC
+
+Top level modules:
+	RST_SYNC
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_DIV_MUX.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/CLK_DIV_MUX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CLK_DIV_MUX
+
+Top level modules:
+	CLK_DIV_MUX
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_TOP
+
+Top level modules:
+	UART_TOP
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/FSM.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/FSM.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/UART_TX.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/UART_TX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_TX
+
+Top level modules:
+	UART_TX
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_RD.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/FIFO_RD.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FIFO_RD
+
+Top level modules:
+	FIFO_RD
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/SYS_TOP.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/SYS_TOP.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SYS_TOP
+
+Top level modules:
+	SYS_TOP
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Deserializer.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Deserializer.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Deserializer
+
+Top level modules:
+	Deserializer
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Stop_check.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Stop_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Stop_check
+
+Top level modules:
+	Stop_check
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Mux.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_TX/Mux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Mux
+
+Top level modules:
+	Mux
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Data_Sampling.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/Data_Sampling.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_Sampling
+
+Top level modules:
+	Data_Sampling
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/BIT_SYNC.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/FIFO_ASYNC/BIT_SYNC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BIT_SYNC
+
+Top level modules:
+	BIT_SYNC
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/REG_file.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/REG_file.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module REG_file
+
+Top level modules:
+	REG_file
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/edge_bit_cont.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/edge_bit_cont.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module edge_bit_cont
+
+Top level modules:
+	edge_bit_cont
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/parity_check.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/parity_check.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module parity_check
+
+Top level modules:
+	parity_check
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/data_sync.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/data_sync.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_SYNC
+
+Top level modules:
+	Data_SYNC
+
+} {} {}} {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/FSM_RX.v} {1 {vlog -work work {D:/Shahoda/el temsah/Final_System/rtl/RTL/UART/UART_RX/FSM_RX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM_RX
+
+Top level modules:
+	FSM_RX
+
+} {} {}}

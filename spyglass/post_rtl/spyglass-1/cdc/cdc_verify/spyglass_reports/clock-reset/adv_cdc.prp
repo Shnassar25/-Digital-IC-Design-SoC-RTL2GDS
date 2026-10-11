@@ -1,0 +1,21 @@
+################################################################################
+#
+# Purpose: 
+#   This file specifies the assertion details along with their run status.
+#   Functional analysis is done only for those assertions that are enabled
+#   in the property file.
+#
+# Format: 
+#   
+#   RuleName: <rule-name>
+#   <selection> <type> <status> <file-name> <line-num> <hier> [ <info> ]
+#   .....
+#   
+#   
+################################################################################
+RuleName: Ac_cdc01a 
+on   Assertion   Partially-Proved    ../../rtl/RTL/FIFO_ASYNC/BIT_SYNC.v  29  "SYS_TOP.fifo_async.u_sync_w2r"  [SFlop:SYS_TOP.fifo_async.W_ptr[4] SClk:SYS_TOP.REF_CLK DFlop:SYS_TOP.fifo_async.u_sync_w2r.sync_reg[0][4] DClk:SYS_TOP.UART_CLK]
+
+RuleName: Ac_datahold01a 
+on   Assertion   Partially-Proved    ../../rtl/RTL/UART/UART_TX/Serializer.v  42  "SYS_TOP.uart.u_uart_tx.SER"  [Des: "SYS_TOP.uart.u_uart_tx.SER.\reg_data_reg[0] .Q", Src: "SYS_TOP.fifo_async.u_fifo_mem.\MEM_reg[15][0] .Q"]
+on   Assertion   Partially-Proved    ../../rtl/RTL/UART/UART_TX/Parity_Calc.v  31  "SYS_TOP.uart.u_uart_tx.PER_TX"  [Des: "SYS_TOP.uart.u_uart_tx.PER_TX.\data_reg[0] .Q", Src: "SYS_TOP.fifo_async.u_fifo_mem.\MEM_reg[15][0] .Q"]

@@ -1,0 +1,1160 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/Cadence/SOC/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Sat Oct 10 09:36:35 2026 (mem=62.2M) ---
+--- Running on localhost.localdomain (x86_64 w/Linux 2.6.32-431.29.2.el6.x86_64) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> restoreDesign /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat SYS_TOP
+Reading config file - /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.conf
+
+Loading Lef file /home/ahesham/Project/pnr/../std_cells/lef/tsmc13fsg_6lm_tech.lef...
+
+Loading Lef file /home/ahesham/Project/pnr/../std_cells/lef/tsmc13_m_macros.lef...
+Set DBUPerIGU to M2 pitch 820.
+Initializing default via types and wire widths ...
+
+Loading Lef file /home/ahesham/Project/pnr/import/SYS_TOP_6.lef...
+**WARN: (SOCLF-246):	The 'UNITS' attribute should be set
+in the first lef file (technology lef). There is an attempt to set it
+in subsequent lef files which will be ignored.
+**WARN: (SOCLF-46):	Class CORE macro 'SYS_TOP' has no SITE statement defined.
+Class CORE macros require a SITE statement. The SITE FE_CORE_0 was
+created and will be used for this macro, using height 220.6000 that
+matches the macro SIZE height, and width 0.4100 that matches the
+m2 routing pitch. Define the site explicitly in the LEF file, to
+this message in the future.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Sat Oct 10 09:37:18 2026
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM6 GENERATE
+viaInitial ends at Sat Oct 10 09:37:18 2026
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**WARN: (SOCDB-2079):	fterm test_si6 of cell SYS_TOP is not defined in LEF.
+Reading verilog netlist '/home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.v'
+Inserting temporary buffers to remove assignment statements.
+Non-leaf cell SYS_TOP will be treated as a leaf cell.
+
+*** Memory Usage v0.144 (Current mem = 189.137M, initial mem = 62.238M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=189.1M) ***
+Set top cell to SYS_TOP.
+Reading max timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ss_1p08v_125c' 
+Reading min timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c' 
+Reading max timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+Reading min timing library '/home/ahesham/Project/pnr/../std_cells/libs/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib' ...
+No function defined for cell 'HOLDX1M'. The cell will only be used for analysis.
+ read 618 cells in library 'scmetro_tsmc_cl013g_rvt_tt_1p2v_25c' 
+**WARN: (SOCSYC-2):	Timing is not defined for cell SYS_TOP.
+*** End library_loading (cpu=0.13min, mem=90.8M, fe_cpu=0.24min, fe_mem=279.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell SYS_TOP ...
+*** Netlist is unique.
+** info: there are 2531 modules.
+** info: there are 2325 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 280.156M, initial mem = 62.238M) ***
+CTE reading timing constraint file '/home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.pt' ...
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+**WARN: (SOCCTE-287):	Library scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c is not in the max library list.
+**WARN: (SOCCTE-289):	set_driving_cell :  Use the cell in library scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.0 mem=286.5M) ***
+*info - Done with setDoAssign with 32 assigns removed and 0 assigns could not be removed.
+Total number of combinational cells: 433
+Total number of sequential cells: 174
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2M BUFX10M BUFX12M BUFX14M BUFX16M BUFX18M BUFX20M BUFX24M BUFX32M BUFX3M CLKBUFX1M BUFX4M BUFX5M BUFX6M BUFX8M CLKBUFX12M CLKBUFX16M CLKBUFX20M CLKBUFX24M CLKBUFX2M CLKBUFX3M CLKBUFX32M CLKBUFX40M CLKBUFX4M CLKBUFX6M CLKBUFX8M
+Total number of usable buffers: 26
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1M CLKINVX12M CLKINVX16M CLKINVX20M CLKINVX24M CLKINVX2M CLKINVX3M CLKINVX32M CLKINVX40M CLKINVX4M CLKINVX6M CLKINVX8M INVX10M INVX12M INVX14M INVX16M INVX18M INVX2M INVX1M INVX20M INVX24M INVX32M INVX4M INVX3M INVX6M INVX5M INVX8M INVXLM
+Total number of usable inverters: 28
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1M DLY1X4M DLY2X1M DLY2X4M DLY3X1M DLY3X4M DLY4X1M DLY4X4M
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 0.1 ps.
+Reading Capacitance Table File /home/ahesham/Project/pnr/../std_cells/captables/tsmc13fsg.capTbl ...
+Cap Table was created using First Encounter 08.10-p004_1.
+Process name: tsmc13fsg.
+**WARN: (SOCEXT-2760):	Layer M7 in the cap table is larger than max number of layers, 6, defined in the LEF file.
+**WARN: (SOCEXT-2771):	Top layer, M7,  of Via via6 in the cap table is larger than max number of layers, 6, defined in the LEF file.
+**WARN: (SOCEXT-2710):	Cap table for M7 is ignored, the layer is not defined in the design.
+#WARNING (NRDB-21) The number of routing layer 6 in the database does not match with the value of 10 in the Extended Cap Table file.
+Loading preference file /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/enc.pref.tcl ...
+*info: Setting setup target slack to 0.000
+*info: Hold target slack is 0.000
+Reading floorplan file - /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.fp (mem = 287.8M).
+Set FPlanBox to (0 0 480220 437580)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** End loading floorplan (cpu = 0:00:00.0, mem = 289.5M) ***
+loading place ...
+Reading placement file - /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.place.gz.
+Reading stdCellPlacement "/home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.place.gz" ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=289.6M) ***
+Total net length = 5.748e+04 (3.050e+04 2.698e+04) (ext = 2.296e+03)
+loading route ...
+Reading routing file - /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.route.gz.
+Reading Cadence  routing data (Created by First Encounter v08.10-p004_1 on Tue Oct  6 20:32:40 2026 Format: 7.0)...
+Suppress "**WARN ..." messages.
+routingBox: (0 0) (480220 437580)
+coreBox:    (12300 12300) (468220 425580)
+Un-suppress "**WARN ..." messages.
+*** Total 2452 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=291.2M) ***
+
+Reading clock tree spec file '/home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.ctstch' ...
+
+Using detail cap. scale factor for clock nets.
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.146248(V=0.139886 H=0.15261) (ff/um) [7.31238e-05]
+Est. Res                : 1.15(V=1.05 H=1.25)(ohm/um) [0.000575]
+Est. Via Res            : 4(ohm) [7.75]
+Est. Via Cap            : 0.154152(ff)
+M1(H) w=0.16(um) s=0.18(um) p=0.41(um) es=0.66(um) cap=0.157(ff/um) res=2.37(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=3.75(ohm) viaCap=0.164232(ff)
+M3(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=4(ohm) viaCap=0.160393(ff)
+M4(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.14(ff/um) res=1.05(ohm/um) viaRes=4(ohm) viaCap=0.154152(ff)
+M5(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.106(ff/um) res=1.05(ohm/um) viaRes=2.4(ohm) viaCap=0.130276(ff)
+M6(V) w=0.4(um) s=0.42(um) p=0.82(um) es=1.24(um) cap=0.135(ff/um) res=0.525(ohm/um) viaRes=2.33333(ohm) viaCap=0.222205(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.146248(V=0.139886 H=0.15261) (ff/um) [7.31238e-05]
+Est. Res                : 1.15(V=1.05 H=1.25)(ohm/um) [0.000575]
+Est. Via Res            : 4(ohm) [7.75]
+Est. Via Cap            : 0.154152(ff)
+M1(H) w=0.16(um) s=0.18(um) p=0.41(um) es=0.66(um) cap=0.157(ff/um) res=2.37(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=3.75(ohm) viaCap=0.164232(ff)
+M3(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.153(ff/um) res=1.25(ohm/um) viaRes=4(ohm) viaCap=0.160393(ff)
+M4(V) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.14(ff/um) res=1.05(ohm/um) viaRes=4(ohm) viaCap=0.154152(ff)
+M5(H) w=0.2(um) s=0.21(um) p=0.41(um) es=0.62(um) cap=0.106(ff/um) res=1.05(ohm/um) viaRes=2.4(ohm) viaCap=0.130276(ff)
+M6(V) w=0.4(um) s=0.42(um) p=0.82(um) es=1.24(um) cap=0.135(ff/um) res=0.525(ohm/um) viaRes=2.33333(ohm) viaCap=0.222205(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: SCAN_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+AutoClockRootPin 2: UART_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+AutoClockRootPin 3: REF_CLK
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      NO
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=296.4M) ***
+<CMD> selectPhyPin 0.0000 -0.1000 0.7200 0.1000 2 {SI[4]}
+<CMD> getIoFlowFlag
+<CMD> refinePlace -preserveRouting
+Starting refinePlace ...
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.0   mem=300.8M  mem(used)=2.0M***
+Total net length = 6.004e+04 (3.171e+04 2.833e+04) (ext = 2.316e+03)
+default core: bins with density >  0.75 = 1.56 % ( 1 / 64 )
+<CMD> setNanoRouteMode -routeWithEco true
+<CMD> routeDesign -globalDetail -viaOpt -wireOpt
+Begin checking placement ...
+*info: Placed = 1766
+*info: Unplaced = 0
+Placement Density:66.64%(31361/47061)
+Redoing specifyClockTree  -clkfile /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.ctstch  ...
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (113) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=300.6M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Sat Oct 10 09:37:53 2026
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 300.00 (Mb)
+Using detail cap. scale factor for clock nets.
+#NanoRoute Version v08.10-p008 NR081027-0018/USR58-UB
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done.
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         534           0        1404    72.29%
+#  Metal 2        V         586           0        1404     0.00%
+#  Metal 3        H         534           0        1404     0.00%
+#  Metal 4        V         586           0        1404     0.00%
+#  Metal 5        H         534           0        1404     0.00%
+#  Metal 6        V         275          18        1404     0.00%
+#  --------------------------------------------------------------
+#  Total                   3049       1.02%        8424    12.05%
+#
+#  113 nets (4.50%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 341.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 345.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 345.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 345.00 (Mb)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 345.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded from the statistics)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)   OverCon
+#  ------------------------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2      9(0.64%)      3(0.21%)      2(0.14%)   (1.00%)
+#   Metal 3      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total      9(0.12%)      3(0.04%)      2(0.03%)   (0.18%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 3
+#
+#Complete Global Routing.
+#Total wire length = 75127 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 561 um.
+#Total wire length on LAYER METAL2 = 24070 um.
+#Total wire length on LAYER METAL3 = 32136 um.
+#Total wire length on LAYER METAL4 = 14245 um.
+#Total wire length on LAYER METAL5 = 3979 um.
+#Total wire length on LAYER METAL6 = 135 um.
+#Total number of vias = 15739
+#Up-Via Summary (total 15739):
+#           
+#-----------------------
+#  Metal 1         7716
+#  Metal 2         6004
+#  Metal 3         1766
+#  Metal 4          243
+#  Metal 5           10
+#-----------------------
+#                 15739 
+#
+#Max overcon = 3 tracks.
+#Total overcon = 0.18%.
+#Worst layer Gcell overcon rate = 1.00%.
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 8.00 (Mb)
+#Total memory = 345.00 (Mb)
+#Peak memory = 374.00 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+# ECO: 0.0% of the total area was rechecked for DRC, and 100.0% required routing.
+#    number of violations = 15
+#cpu time = 00:00:05, elapsed time = 00:00:05, memory = 348.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 354.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 74427 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 3827 um.
+#Total wire length on LAYER METAL2 = 24503 um.
+#Total wire length on LAYER METAL3 = 30855 um.
+#Total wire length on LAYER METAL4 = 12030 um.
+#Total wire length on LAYER METAL5 = 3138 um.
+#Total wire length on LAYER METAL6 = 73 um.
+#Total number of vias = 22372
+#Up-Via Summary (total 22372):
+#           
+#-----------------------
+#  Metal 1         9956
+#  Metal 2         9805
+#  Metal 3         2303
+#  Metal 4          300
+#  Metal 5            8
+#-----------------------
+#                 22372 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 363.00 (Mb)
+#
+#Total wire length = 74427 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 3827 um.
+#Total wire length on LAYER METAL2 = 24503 um.
+#Total wire length on LAYER METAL3 = 30855 um.
+#Total wire length on LAYER METAL4 = 12030 um.
+#Total wire length on LAYER METAL5 = 3138 um.
+#Total wire length on LAYER METAL6 = 73 um.
+#Total number of vias = 22372
+#Up-Via Summary (total 22372):
+#           
+#-----------------------
+#  Metal 1         9956
+#  Metal 2         9805
+#  Metal 3         2303
+#  Metal 4          300
+#  Metal 5            8
+#-----------------------
+#                 22372 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 18.00 (Mb)
+#Total memory = 363.00 (Mb)
+#Peak memory = 374.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:09
+#Increased memory = 75.00 (Mb)
+#Total memory = 362.00 (Mb)
+#Peak memory = 374.00 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 1
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Sat Oct 10 09:38:02 2026
+#
+
+detailRoute
+
+#Start detailRoute on Sat Oct 10 09:38:02 2026
+#
+Using detail cap. scale factor for clock nets.
+#NanoRoute Version v08.10-p008 NR081027-0018/USR58-UB
+#Merging special wires...
+#
+#Start Detail Routing.
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 362.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 362.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 74427 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 3827 um.
+#Total wire length on LAYER METAL2 = 24503 um.
+#Total wire length on LAYER METAL3 = 30855 um.
+#Total wire length on LAYER METAL4 = 12030 um.
+#Total wire length on LAYER METAL5 = 3138 um.
+#Total wire length on LAYER METAL6 = 73 um.
+#Total number of vias = 22372
+#Up-Via Summary (total 22372):
+#           
+#-----------------------
+#  Metal 1         9956
+#  Metal 2         9805
+#  Metal 3         2303
+#  Metal 4          300
+#  Metal 5            8
+#-----------------------
+#                 22372 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#start routing for via minimization ...
+#Total wire length = 74836 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 2826 um.
+#Total wire length on LAYER METAL2 = 31514 um.
+#Total wire length on LAYER METAL3 = 28479 um.
+#Total wire length on LAYER METAL4 = 9647 um.
+#Total wire length on LAYER METAL5 = 2333 um.
+#Total wire length on LAYER METAL6 = 38 um.
+#Total number of vias = 18378
+#Up-Via Summary (total 18378):
+#           
+#-----------------------
+#  Metal 1         9711
+#  Metal 2         7041
+#  Metal 3         1487
+#  Metal 4          135
+#  Metal 5            4
+#-----------------------
+#                 18378 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#Complete routing via minimization.
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 362.00 (Mb)
+#
+#Total wire length = 74836 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 2826 um.
+#Total wire length on LAYER METAL2 = 31514 um.
+#Total wire length on LAYER METAL3 = 28479 um.
+#Total wire length on LAYER METAL4 = 9647 um.
+#Total wire length on LAYER METAL5 = 2333 um.
+#Total wire length on LAYER METAL6 = 38 um.
+#Total number of vias = 18378
+#Up-Via Summary (total 18378):
+#           
+#-----------------------
+#  Metal 1         9711
+#  Metal 2         7041
+#  Metal 3         1487
+#  Metal 4          135
+#  Metal 5            4
+#-----------------------
+#                 18378 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#
+#detailRoute statistics:
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:06
+#Increased memory = 0.00 (Mb)
+#Total memory = 362.00 (Mb)
+#Peak memory = 384.00 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 3
+#Number of fails = 0
+#Total number of fails = 0
+#Complete detailRoute on Sat Oct 10 09:38:08 2026
+#
+
+detailRoute
+
+#Start detailRoute on Sat Oct 10 09:38:08 2026
+#
+Using detail cap. scale factor for clock nets.
+#NanoRoute Version v08.10-p008 NR081027-0018/USR58-UB
+#Merging special wires...
+#    number of violations = 0
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 368.00 (Mb)
+#Total wire length = 74836 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 2826 um.
+#Total wire length on LAYER METAL2 = 31514 um.
+#Total wire length on LAYER METAL3 = 28479 um.
+#Total wire length on LAYER METAL4 = 9647 um.
+#Total wire length on LAYER METAL5 = 2333 um.
+#Total wire length on LAYER METAL6 = 38 um.
+#Total number of vias = 18378
+#Total number of multi-cut vias = 5887 ( 32.0%)
+#Total number of single cut vias = 12491 ( 68.0%)
+#Up-Via Summary (total 18378):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        7523 ( 77.5%)      2188 ( 22.5%)       9711
+#  Metal 2        4026 ( 57.2%)      3015 ( 42.8%)       7041
+#  Metal 3         937 ( 63.0%)       550 ( 37.0%)       1487
+#  Metal 4           5 (  3.7%)       130 ( 96.3%)        135
+#  Metal 5           0 (  0.0%)         4 (100.0%)          4
+#-----------------------------------------------------------
+#                12491 ( 68.0%)      5887 ( 32.0%)      18378 
+#
+#    number of violations = 0
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 363.00 (Mb)
+#CELL_VIEW SYS_TOP,init has no DRC violation.
+#Post Route via swapping is done.
+#
+#detailRoute statistics:
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = -1.00 (Mb)
+#Total memory = 361.00 (Mb)
+#Peak memory = 384.00 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 4
+#Number of fails = 0
+#Total number of fails = 0
+#Complete detailRoute on Sat Oct 10 09:38:10 2026
+#
+
+detailRoute
+
+#Start detailRoute on Sat Oct 10 09:38:10 2026
+#
+Using detail cap. scale factor for clock nets.
+#NanoRoute Version v08.10-p008 NR081027-0018/USR58-UB
+#Merging special wires...
+#
+#Start Detail Routing.
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 74836 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 2826 um.
+#Total wire length on LAYER METAL2 = 31514 um.
+#Total wire length on LAYER METAL3 = 28479 um.
+#Total wire length on LAYER METAL4 = 9647 um.
+#Total wire length on LAYER METAL5 = 2333 um.
+#Total wire length on LAYER METAL6 = 38 um.
+#Total number of vias = 18378
+#Total number of multi-cut vias = 5887 ( 32.0%)
+#Total number of single cut vias = 12491 ( 68.0%)
+#Up-Via Summary (total 18378):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        7523 ( 77.5%)      2188 ( 22.5%)       9711
+#  Metal 2        4026 ( 57.2%)      3015 ( 42.8%)       7041
+#  Metal 3         937 ( 63.0%)       550 ( 37.0%)       1487
+#  Metal 4           5 (  3.7%)       130 ( 96.3%)        135
+#  Metal 5           0 (  0.0%)         4 (100.0%)          4
+#-----------------------------------------------------------
+#                12491 ( 68.0%)      5887 ( 32.0%)      18378 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#
+#Total wire length = 74836 um.
+#Total half perimeter of net bounding box = 61559 um.
+#Total wire length on LAYER METAL1 = 2826 um.
+#Total wire length on LAYER METAL2 = 31514 um.
+#Total wire length on LAYER METAL3 = 28479 um.
+#Total wire length on LAYER METAL4 = 9647 um.
+#Total wire length on LAYER METAL5 = 2333 um.
+#Total wire length on LAYER METAL6 = 38 um.
+#Total number of vias = 18378
+#Total number of multi-cut vias = 5887 ( 32.0%)
+#Total number of single cut vias = 12491 ( 68.0%)
+#Up-Via Summary (total 18378):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        7523 ( 77.5%)      2188 ( 22.5%)       9711
+#  Metal 2        4026 ( 57.2%)      3015 ( 42.8%)       7041
+#  Metal 3         937 ( 63.0%)       550 ( 37.0%)       1487
+#  Metal 4           5 (  3.7%)       130 ( 96.3%)        135
+#  Metal 5           0 (  0.0%)         4 (100.0%)          4
+#-----------------------------------------------------------
+#                12491 ( 68.0%)      5887 ( 32.0%)      18378 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#
+#
+#detailRoute statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (Mb)
+#Total memory = 361.00 (Mb)
+#Peak memory = 384.00 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete detailRoute on Sat Oct 10 09:38:10 2026
+#
+<CMD> selectInst {reg_file/Reg_File_reg[7][7]}
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (SOCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix SYS_TOP_postRoute -outDir timingReports
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+Detail RC Extraction called for design SYS_TOP.
+Process corner(s) are loaded.
+Loading corner...  /home/ahesham/Project/pnr/../std_cells/captables/tsmc13fsg.capTbl
+extractDetailRC Option : -outfile ./SYS_TOP_4Lsj3P_8870.rcdb.d 
+RC Mode: Detail [Extended CapTable, RC Table Resistances]
+Capacitance Scaling Factor   : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Resistance Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 361.7M)
+Creating parasitic data file './SYS_TOP_4Lsj3P_8870.rcdb.d/SYS_TOP.rcdb.gz' for storing RC.
+Write RCDB with uncompressed RC data. Compressed RCDB mode disabled.
+Extracted 10.0082% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 20.0072% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 30.0063% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 40.0054% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 50.0091% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 60.0082% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 70.0072% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 80.0063% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 90.0054% (CPU Time= 0:00:00.1  MEM= 361.7M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 361.7M)
+Nr. Extracted Resistors     : 40450
+Nr. Extracted Ground Cap.   : 42887
+Nr. Extracted Coupling Cap. : 0
+Detail RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 361.742M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| 16.489  | 18.836  | 16.489  | 298.586 |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |    0    |   N/A   |   N/A   |
+|          All Paths:|  1739   |   859   |   875   |    5    |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+---------------------------+--------------+
+|                |            Real           |     Total    |
+|    DRVs        +--------------+------------+--------------|
+|                |Nr nets(terms)| Worst Vio  |Nr nets(terms)|
++----------------+--------------+------------+--------------+
+|   max_cap      |    0 (0)     |   0.000    |    0 (0)     |
+|   max_tran     |    0 (0)     |   0.000    |    0 (0)     |
+|   max_fanout   |    0 (0)     |     0      |    0 (0)     |
++----------------+--------------+------------+--------------+
+
+Density: 66.640%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.81 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 366.753906 Mbytes
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (SOCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix SYS_TOP_postRoute -outDir timingReports
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+Detail RC Extraction called for design SYS_TOP.
+Process corner(s) are loaded.
+Loading corner...  /home/ahesham/Project/pnr/../std_cells/captables/tsmc13fsg.capTbl
+extractDetailRC Option : -outfile ./SYS_TOP_4Lsj3P_8870.rcdb.d -maxResLength 200 
+RC Mode: Detail [Extended CapTable, RC Table Resistances]
+Capacitance Scaling Factor   : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Resistance Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 366.8M)
+Creating parasitic data file './SYS_TOP_4Lsj3P_8870.rcdb.d/SYS_TOP.rcdb.gz' for storing RC.
+Write RCDB with uncompressed RC data. Compressed RCDB mode disabled.
+Extracted 10.0082% (CPU Time= 0:00:00.1  MEM= 370.2M)
+Extracted 20.0072% (CPU Time= 0:00:00.1  MEM= 372.0M)
+Extracted 30.0063% (CPU Time= 0:00:00.1  MEM= 372.7M)
+Extracted 40.0054% (CPU Time= 0:00:00.1  MEM= 372.8M)
+Extracted 50.0091% (CPU Time= 0:00:00.1  MEM= 372.8M)
+Extracted 60.0082% (CPU Time= 0:00:00.1  MEM= 372.8M)
+Extracted 70.0072% (CPU Time= 0:00:00.1  MEM= 372.8M)
+Extracted 80.0063% (CPU Time= 0:00:00.1  MEM= 372.8M)
+Extracted 90.0054% (CPU Time= 0:00:00.1  MEM= 373.0M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 373.0M)
+Nr. Extracted Resistors     : 40450
+Nr. Extracted Ground Cap.   : 42887
+Nr. Extracted Coupling Cap. : 0
+Detail RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 366.754M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| -0.889  | -0.360  | -0.889  | 201.210 |   N/A   |   N/A   |
+|           TNS (ns):| -87.897 | -0.604  | -87.293 |  0.000  |   N/A   |   N/A   |
+|    Violating Paths:|   210   |    2    |   208   |    0    |   N/A   |   N/A   |
+|          All Paths:|  1739   |   859   |   875   |    5    |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
+Density: 66.640%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.83 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 366.753906 Mbytes
+<CMD> addFiller -cell {FILL1M FILL2M FILL4M FILL8M FILL16M FILL32M FILL64M} -prefix FILLER -markFixed
+**WARN: (SOCSP-9057):	Fillers being added in a FIXED mode to the whole design. Some subsequent
+operations, such as antenna fixing, may fail due to fillers being marked
+as 'FIXED'. If this was not intended, use deleteFiller command to undo.
+*INFO:   Added 10 filler insts (cell FILL64M / prefix FILLER).
+*INFO:   Added 51 filler insts (cell FILL32M / prefix FILLER).
+*INFO:   Added 102 filler insts (cell FILL16M / prefix FILLER).
+*INFO:   Added 454 filler insts (cell FILL8M / prefix FILLER).
+*INFO:   Added 802 filler insts (cell FILL4M / prefix FILLER).
+*INFO:   Added 821 filler insts (cell FILL2M / prefix FILLER).
+*INFO:   Added 956 filler insts (cell FILL1M / prefix FILLER).
+*INFO: Total 3196 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+*INFO: Checking for DRC violations on added fillers.
+*INFO: Iteration 0-#1, Found 0 DRC violation  (CPU: 0:00:00.5).
+*INFO:   Added 0 filler inst  (cell FILL1M / prefix FILLER).
+*INFO: Checking for DRC violations on added fillers.
+*INFO: Iteration 0-#1, Found 0 DRC violation  (CPU: 0:00:00.4).
+*INFO: End DRC Checks. (CPU: 0:00:00.9 MEM: 14.9M).
+<CMD> saveNetlist export/SYS_TOP.v
+Writing Netlist "export/SYS_TOP.v" ...
+<CMD> saveNetlist export/SYS_TOP_pg.v -includePowerGround
+Writing Netlist "export/SYS_TOP_pg.v" ...
+**WARN: (SOCVL-516):	No Power/Ground connections in top module (SYS_TOP).
+Pwr name (VDD).
+Gnd name (VSS).
+1 Pwr names and 1 Gnd names.
+Creating all pg connections for top cell (SYS_TOP).
+<CMD> rcOut -spf export/SYS_TOP.spf
+Opening parasitic data file './SYS_TOP_4Lsj3P_8870.rcdb.d' for reading.
+Read RCDB with uncompressed RC data. Compressed RCDB mode disabled.
+RC Out has the following PVT Info:
+   RC-typical 
+Printing *|NET...
+Detail RC Out Completed (CPU Time= 0:00:00.2  MEM= 381.7M)
+Closing parasitic data file './SYS_TOP_4Lsj3P_8870.rcdb.d'. 2450 times net's RC data read were performed.
+<CMD> write_sdf -version 3.0 export/${top_module}.sdf
+Topological Sorting (CPU = 0:00:00.0, MEM = 381.7M)
+Number of Loop : 0
+Start delay calculation (mem=381.672M)...
+*** Calculating scaling factor for min libraries using the default operating condition of each library.
+delayCal using detail RC...
+Delay calculation completed.
+(0:00:00.1 381.672M 0)
+Topological Sorting (CPU = 0:00:00.0, MEM = 381.7M)
+Number of Loop : 0
+Start delay calculation (mem=381.672M)...
+delayCal using detail RC...
+Delay calculation completed.
+(0:00:00.1 381.672M 0)
+*** CDM Built up (cpu=0:00:00.3  mem= 381.7M) ***
+<CMD> report_power -outfile report/power.rpt
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 381.7M)
+Number of Loop : 0
+Start delay calculation (mem=381.672M)...
+delayCal using detail RC...
+Delay calculation completed.
+(0:00:00.1 381.672M 0)
+*** CDM Built up (cpu=0:00:00.2  mem= 381.7M) ***
+Start force assigning power rail voltages for view default_view_setup
+Finished assigning power rail voltages
+
+CPE found ground net: VSS
+CPE found power net: VDD  voltage: 1.08V
+INFO (POWER-1606): Found clock 'REF_CLK' with frequency 50MHz from SDC file.
+
+INFO (POWER-1606): Found clock 'ALU_CLK' with frequency 50MHz from SDC file.
+
+INFO (POWER-1606): Found clock 'UART_RX_CLK' with frequency 3.68609MHz from SDC file.
+
+INFO (POWER-1606): Found clock 'UART_CLK' with frequency 3.68609MHz from SDC file.
+
+INFO (POWER-1606): Found clock 'scan_clk' with frequency 1MHz from SDC file.
+
+INFO (POWER-1606): Found clock 'UART_TX_CLK' with frequency 115190Hz from SDC file.
+
+
+Propagating signal activity...
+
+
+Starting Levelizing
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT)
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 5%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 10%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 15%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 20%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 25%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 30%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 35%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 40%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 45%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 50%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 55%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 60%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 65%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 70%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 75%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 80%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 85%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 90%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 95%
+
+Finished Levelizing
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT)
+
+Starting Activity Propagation
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT)
+INFO (POWER-1356):   No default input activity has been set.  Defaulting to 0.2.
+
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 5%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 10%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 15%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 20%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 25%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 30%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 35%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 40%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 45%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 50%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 55%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 60%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 65%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 70%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 75%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 80%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 85%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 90%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 95%
+
+Finished Activity Propagation
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT)
+WARNING (POWER-1500): 2 cell(s) in the design have timing library models but
+do not have internal power data.  Internal power will not be calculated for these cells:
+
+  TIELOM
+  TIEHIM
+WARNING (POWER-1501): 2 cell(s) in the design have timing library models but
+do not have leakage power data.  Leakage power will not be calculated for these cells:
+
+  TIELOM
+  TIEHIM
+
+Starting Calculating power
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT)
+
+Calculating power dissipation...
+
+ ... Calculating switching power
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 5%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 10%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 15%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 20%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 25%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 30%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 35%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 40%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 45%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 50%
+ ... Calculating internal and leakage power
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 55%
+2026-Oct-10 09:39:27 (2026-Oct-10 07:39:27 GMT): 60%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 65%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 70%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 75%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 80%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 85%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 90%
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT): 95%
+
+Finished Calculating power
+2026-Oct-10 09:39:28 (2026-Oct-10 07:39:28 GMT)
+WARNING (POWER-1216): The total clock network power in the report may be higher than the actual total clock network power in the design.
+Instances that are part of multiple clock networks may be counted multiple times in this total.
+
+report_power consumed time 00:00:01 : increased peak memory (560M) by 0
+Output file is report/power.rpt.
+<CMD> streamOut export/SYS_TOP.gds -mapFile ./import/gds2InLayer.map -libName DesignLib -stripes 1 -units 2000 -mode ALL
+Parse map file...
+**ERROR: (SOCOGDS-1556):	 Line 1: Incorrect map ;Avanti!Layer GDS2Layer[:GDS2DataType]
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 3: Incorrect map 1:0    1:0       ; DNW        Converts GDS2 layer 01     to Apollo layer 01
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 4: Incorrect map 3:0    3:0       ; NWELL      Converts GDS2 layer 03     to Apollo layer 03
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 5: Incorrect map 6:0    6:0       ; DIFF       Converts GDS2 layer 06     to Apollo layer 06
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 6: Incorrect map 15:0  15:0       ; OD2        Converts GDS2 layer 15     to Apollo layer 15
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 7: Incorrect map 17:0  17:0       ; POLY1      Converts GDS2 layer 17     to Apollo layer 17
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 8: Incorrect map 25:0  25:0       ; PIMP       Converts GDS2 layer 25     to Apollo layer 25
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 9: Incorrect map 26:0  26:0       ; NIMP       Converts GDS2 layer 26     to Apollo layer 26
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 10: Incorrect map 30:0  30:0       ; CONT       Converts GDS2 layer 30     to Apollo layer 30
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 11: Incorrect map 31:0  31:0       ; METAL1     Converts GDS2 layer 31     to Apollo layer 31
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 12: Incorrect map 131:0 131:0      ; METAL1 txt Converts GDS2 layer 131    to Apollo layer 131
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 13: Incorrect map 51:0  51:0       ; VIA12      Converts GDS2 layer 51     to Apollo layer 51
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 14: Incorrect map 32:0  32:0       ; METAL2     Converts GDS2 layer 32     to Apollo layer 32
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 15: Incorrect map 132:0 132:0      ; METAL2 txt Converts GDS2 layer 132    to Apollo layer 132
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 16: Incorrect map 52:0  52:0       ; VIA23      Converts GDS2 layer 52     to Apollo layer 52
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 17: Incorrect map 33:0  33:0       ; METAL3     Converts GDS2 layer 33     to Apollo layer 33
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 18: Incorrect map 133:0 133:0      ; METAL3 txt Converts GDS2 layer 133    to Apollo layer 133
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 19: Incorrect map 53:0  53:0       ; VIA34      Converts GDS2 layer 53     to Apollo layer 53
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 20: Incorrect map 34:0  34:0       ; METAL4     Converts GDS2 layer 34     to Apollo layer 34
+....check the number of fields on this line
+**ERROR: (SOCOGDS-1556):	 Line 21: Incorrect map 134:0 134:0      ; METAL4 txt Converts GDS2 layer 134    to Apollo layer 134
+....check the number of fields on this line
+**WARN: (EMS-27):	Message (SOCOGDS-1556) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for tile
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                           5521
+
+Ports/Pins                             0
+
+Nets                                   0
+
+    Via Instances                      0
+
+Special Nets                           0
+
+    Via Instances                      0
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+######Streamout is finished!
+<CMD> deselectAll
+<CMD> selectWire 236.0400 3.3250 237.0400 216.3800 6 VSS
+<CMD> getIoFlowFlag
+<CMD> saveDesign /home/ahesham/Project/pnr/SYS_TOP_Finish.enc
+Redoing specifyClockTree  -clkfile /home/ahesham/Project/pnr/SYS_TOP_post_cts.enc.dat/SYS_TOP.ctstch  ...
+**WARN: (SOCSYT-3036):	Design directory /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat exists, rename it to /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.v" ...
+Saving clock tree spec file '/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/SYS_TOP.ctstch' ...
+Saving configuration ...
+Saving preference file /home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/enc.pref.tcl ...
+Saving SI fix option to '/home/ahesham/Project/pnr/SYS_TOP_Finish.enc.dat/siFix.option'...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=376.7M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=376.7M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+
+*** Memory Usage v0.144 (Current mem = 376.668M, initial mem = 62.238M) ***
+--- Ending "First Encounter" (totcpu=0:00:54.5, real=0:03:28, mem=376.7M) ---

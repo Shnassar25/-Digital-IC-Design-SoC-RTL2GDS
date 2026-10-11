@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : area
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sun Sep 27 03:48:04 2026
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/ICer/ASS/Final_System/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          791
+Number of nets:                          3092
+Number of cells:                         2264
+Number of combinational cells:           1760
+Number of sequential cells:               466
+Number of macros/black boxes:               0
+Number of buf/inv:                        285
+Number of references:                      15
+
+Combinational area:              14265.134354
+Buf/Inv area:                     1068.443624
+Noncombinational area:           11565.784174
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 25830.918528
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------------------------------
+SYS_TOP                           25830.9185    100.0     18.8272      0.0000  0.0000  SYS_TOP
+CLK_DIV_RX                          781.3288      3.0    400.0780    274.1711  0.0000  Clk_div_50_Div_Ratio8_1
+CLK_DIV_RX/add_36                   107.0797      0.4    107.0797      0.0000  0.0000  Clk_div_50_Div_Ratio8_1_DW01_inc_0
+CLK_DIV_TX                          763.6783      3.0    371.8372    284.7614  0.0000  Clk_div_50_Div_Ratio8_0
+CLK_DIV_TX/add_36                   107.0797      0.4    107.0797      0.0000  0.0000  Clk_div_50_Div_Ratio8_0_DW01_inc_0
+D_SYNC                              395.3712      1.5     84.7224    310.6488  0.0000  Data_SYNC_NUM_STAGES2_BUS_WIDTH8
+MUX_RX                               88.2525      0.3     88.2525      0.0000  0.0000  CLK_DIV_MUX_WIDTH8
+RST_SYNC_REF                         51.7748      0.2      0.0000     51.7748  0.0000  RST_SYNC_NUM_STAGES2_0
+RST_SYNC_UART                        51.7748      0.2      0.0000     51.7748  0.0000  RST_SYNC_NUM_STAGES2_1
+U0_CLK_GATING                        40.0078      0.2      0.0000     40.0078  0.0000  CLK_GATING
+alu                                5609.3289     21.7   1081.3873    440.0858  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4
+alu/add_35                          231.8099      0.9    231.8099      0.0000  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_add_0
+alu/div_45                         1434.3973      5.6   1434.3973      0.0000  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW_div_uns_0
+alu/mult_41                        2155.7144      8.3   1914.4909      0.0000  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW02_mult_0
+alu/mult_41/FS_1                    241.2235      0.9    241.2235      0.0000  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_add_1
+alu/sub_38                          265.9342      1.0    265.9342      0.0000  0.0000  Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4_DW01_sub_0
+control                            1510.8828      5.8    804.8628    706.0200  0.0000  SYS_CTRL_WIDTH8_ADDR4
+fifo_async                         6909.5824     26.7     14.1204      0.0000  0.0000  ASYNC_FIFO_DATASIZE8_ADDRSIZE4_DEPTHSIZE16
+fifo_async/u_fifo_mem              5389.2860     20.9   2075.6989   3313.5872  0.0000  FIFO_MEM_CNTRL_ADDR4_DATA8_DEPTH16
+fifo_async/u_fifo_rd                497.7441      1.9    212.9827    284.7614  0.0000  FIFO_RD_ADDR4
+fifo_async/u_fifo_wr                490.6839      1.9    205.9225    284.7614  0.0000  FIFO_WR_ADDR4
+fifo_async/u_sync_r2w               258.8740      1.0      0.0000    258.8740  0.0000  BIT_SYNC_NUM_STAGES2_BUS_WIDTH5_1
+fifo_async/u_sync_w2r               258.8740      1.0      0.0000    258.8740  0.0000  BIT_SYNC_NUM_STAGES2_BUS_WIDTH5_0
+pulse_gen_busy                       57.6583      0.2      5.8835     51.7748  0.0000  PULSE_GEN
+reg_file                           5715.2319     22.1   2168.6582   3546.5738  0.0000  REG_file_WIDTH8_NO_OF_REG16_ADDR4
+uart                               3837.2187     14.9      7.0602      0.0000  0.0000  UART_TOP_8_6_0_1_0_1
+uart/u_uart_rx                     2676.9925     10.4      7.0602      0.0000  0.0000  UART_RX_8_6_0_1
+uart/u_uart_rx/data_sampler         703.6666      2.7    600.1170    103.5496  0.0000  Data_Sampling_PRESCALE6
+uart/u_uart_rx/deserializer         442.4392      1.7    227.1031    215.3361  0.0000  Deserializer_WIDTH8_PRESCALE6
+uart/u_uart_rx/edge_bit_counter     657.7753      2.5    398.9013    258.8740  0.0000  edge_bit_cont_PRESCALE6_DATA_BITS8
+uart/u_uart_rx/fsm_rx               666.0122      2.6    561.2859    104.7263  0.0000  FSM_RX_PRESCALE6_DATA_BITS8
+uart/u_uart_rx/parity_checker       130.6137      0.5    104.7263     25.8874  0.0000  parity_check_0_1_8
+uart/u_uart_rx/start_checker         37.6544      0.1     11.7670     25.8874  0.0000  Start_check
+uart/u_uart_rx/stop_checker          31.7709      0.1      5.8835     25.8874  0.0000  Stop_check
+uart/u_uart_tx                     1153.1660      4.5      7.0602      0.0000  0.0000  UART_TX_8_0_1
+uart/u_uart_tx/PER_TX               400.0780      1.5    192.9788    207.0992  0.0000  Parity_Calc_WIDTH8
+uart/u_uart_tx/SER                  510.6878      2.0    200.0390    310.6488  0.0000  Serializer_WIDTH8
+uart/u_uart_tx/fsm_tx               182.3885      0.7     78.8389    103.5496  0.0000  FSM
+uart/u_uart_tx/mux_tx                52.9515      0.2     27.0641     25.8874  0.0000  Mux
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------------------------------
+Total                                                  14265.1344  11565.7842  0.0000
+
+1

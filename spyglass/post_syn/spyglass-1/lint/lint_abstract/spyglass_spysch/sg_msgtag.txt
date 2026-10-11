@@ -1,0 +1,134 @@
+2 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+117
+3 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+118
+4 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+119
+5 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+120
+6 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+121
+7 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+122
+8 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+123
+9 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+124
+10 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+125
+11 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+126
+12 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+127
+13 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+128
+14 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+129
+15 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+130
+16 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+131
+17 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+132
+18 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+133
+19 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+134
+20 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+135
+21 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+136
+22 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+137
+23 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+138
+24 "Domain_Matrix01" 1
+"DomainMatrix_SS"
+139
+25 "Domain_Matrix01" 1
+"Open_Sp_Sheet"
+["./spyglass-1/lint/lint_abstract/spyglass_reports/sdc2sgdc/Domain/clock_SYS_TOP_domain_matrix_0.csv@@noofheadercol:3"]
+26 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+1
+27 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+2
+28 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+3
+29 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+4
+30 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+5
+31 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+6
+32 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+7
+33 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+8
+34 "SDC_Mapping01" 1
+"SDCMapping_TAG"
+9
+36 "SDC_Mapping01" 1
+"Open_Sp_Sheet"
+["./spyglass-1/lint/lint_abstract/spyglass_reports/sdc2sgdc/sdcMapping.csv"]
+-1 "DetectTopDesignUnits" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "Domain_Matrix01" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ElabSummary" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "LINT_abstract01" 3
+"TEMPLATE"
+["lint/lint_abstract"]
+"RULE_ORDER"
+[1]
+"RULEGROUP"
+["lint/Miscellaneous"]
+-1 "SDC2SGDC_INFO" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "SDC_Mapping01" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"

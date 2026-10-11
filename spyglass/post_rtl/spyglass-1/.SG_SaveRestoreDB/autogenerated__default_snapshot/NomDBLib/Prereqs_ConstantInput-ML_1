@@ -1,0 +1,2 @@
+Mux,../../rtl/RTL/UART/UART_TX/UART_TX.v_63,1,i_IN_0_mux,START_BIT
+Mux,../../rtl/RTL/UART/UART_TX/UART_TX.v_63,1,i_IN_1_mux,STOP_BIT

@@ -1,0 +1,623 @@
+m255
+K3
+13
+cModel Technology
+dD:\
+vAlu_16_bit
+Z0 !s100 =5ck:<ngi@lAM=a<Hj0Vh2
+Z1 I8dha`@?h_@SWKi@AcWgKW2
+Z2 VP_PPkG<gVkU_VPR4V_QXz2
+Z3 dD:\Shahoda\el temsah\Final_System
+Z4 w1789578367
+Z5 8D:/Shahoda/el temsah/Final_System/Alu.v
+Z6 FD:/Shahoda/el temsah/Final_System/Alu.v
+L0 3
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/Alu.v|
+Z9 o-work work -O0
+Z10 n@alu_16_bit
+Z11 !s108 1789737544.673000
+Z12 !s107 D:/Shahoda/el temsah/Final_System/Alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vASYNC_FIFO
+Z13 !s100 Vb1cVdmAQnXJ4T]hiPzbE1
+Z14 II0EVWYL:X8>RaefY_?_dX1
+Z15 V4ndzTM7mNX>W>?hj6dN6;0
+R3
+Z16 w1789575835
+Z17 8D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/ASYNC_FIFO.v
+Z18 FD:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/ASYNC_FIFO.v
+L0 4
+R7
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/ASYNC_FIFO.v|
+R9
+Z20 n@a@s@y@n@c_@f@i@f@o
+Z21 !s108 1789737549.091000
+Z22 !s107 D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/ASYNC_FIFO.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vBIT_SYNC
+Z23 !s100 _>7IlP<`J[]aYPQ?YZR?82
+Z24 IDMDM[IAY^kle;5:WknWlB3
+Z25 Vc7CIVK95]MILRAO8`3ao@0
+R3
+Z26 w1787934330
+Z27 8D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/DF_SYNC.v
+Z28 FD:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/DF_SYNC.v
+L0 4
+R7
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/DF_SYNC.v|
+R9
+Z30 n@b@i@t_@s@y@n@c
+Z31 !s108 1789737549.231000
+Z32 !s107 D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/DF_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vClk_div_50
+Z33 !s100 Jjc?NgMLLDPmh6MnUXJYH0
+Z34 II4ACDG@]5Ab=Gb0b[@e:_1
+Z35 V=<ESX4mW=dP4LLNH5GlMZ2
+R3
+Z36 w1789389433
+Z37 8D:/Shahoda/el temsah/Final_System/CLK_DIV_50.v
+Z38 FD:/Shahoda/el temsah/Final_System/CLK_DIV_50.v
+L0 3
+R7
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/CLK_DIV_50.v|
+R9
+Z40 n@clk_div_50
+Z41 !s108 1789737544.872000
+Z42 !s107 D:/Shahoda/el temsah/Final_System/CLK_DIV_50.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCLK_DIV_MUX
+Z43 !s100 F=5M=4I@goFgkW5SBH8Z02
+Z44 InK>b0EFR_VAg]g`0h_MgX0
+Z45 V?ol6PdS9d_l>Y2T?Z=4Z43
+R3
+Z46 w1789571727
+Z47 8D:/Shahoda/el temsah/Final_System/CLK_DIV_MUX.v
+Z48 FD:/Shahoda/el temsah/Final_System/CLK_DIV_MUX.v
+L0 2
+R7
+r1
+31
+Z49 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/CLK_DIV_MUX.v|
+R9
+Z50 n@c@l@k_@d@i@v_@m@u@x
+Z51 !s108 1789737545.074000
+Z52 !s107 D:/Shahoda/el temsah/Final_System/CLK_DIV_MUX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCLK_GATING
+Z53 !s100 kGf]f^fF90nmo]_5T:Zic3
+Z54 IUkK=Ke9`Uge=[M<`Rm@R>1
+Z55 VDj7^AB3D1gf:2KHe3j=YE1
+R3
+Z56 w1789502213
+Z57 8D:/Shahoda/el temsah/Final_System/CLK_GATING.v
+Z58 FD:/Shahoda/el temsah/Final_System/CLK_GATING.v
+L0 4
+R7
+r1
+31
+Z59 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/CLK_GATING.v|
+R9
+Z60 n@c@l@k_@g@a@t@i@n@g
+Z61 !s108 1789737545.254000
+Z62 !s107 D:/Shahoda/el temsah/Final_System/CLK_GATING.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vData_Sampling
+Z63 !s100 Sb9blOL>n6W1;6Z1@^SDO3
+Z64 IDJMFC[haZWeNe``X83OYc0
+Z65 VajeceNUhb7P`S3XBNe5K[3
+R3
+Z66 w1786525271
+Z67 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/Data_Sampling.v
+Z68 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/Data_Sampling.v
+L0 3
+R7
+r1
+31
+Z69 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/Data_Sampling.v|
+R9
+Z70 n@data_@sampling
+Z71 !s108 1789737546.614000
+Z72 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/Data_Sampling.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vData_SYNC
+Z73 !s100 d=K20i;36z1>n;I34CN8`3
+Z74 IF7zG8zDZHLfFQ:SAznDZI0
+Z75 V@?H5ZdhPUG5=<1M8EV:;D0
+R3
+Z76 w1787243897
+Z77 8D:/Shahoda/el temsah/Final_System/data_sync.v
+Z78 FD:/Shahoda/el temsah/Final_System/data_sync.v
+L0 4
+R7
+r1
+31
+Z79 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/data_sync.v|
+R9
+Z80 n@data_@s@y@n@c
+Z81 !s108 1789737545.568000
+Z82 !s107 D:/Shahoda/el temsah/Final_System/data_sync.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDeserializer
+Z83 !s100 FB>z8Q:P6lDMI[DoXJAN:0
+Z84 I6;lBg;CGUM?]ZIbdjdSQ`2
+Z85 Vn]0:ek[9l4X9][F1TVAAc1
+R3
+Z86 w1786537790
+Z87 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/Deserializer.v
+Z88 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/Deserializer.v
+L0 3
+R7
+r1
+31
+Z89 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/Deserializer.v|
+R9
+Z90 n@deserializer
+Z91 !s108 1789737546.762000
+Z92 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/Deserializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_bit_cont
+Z93 !s100 bbIkKd0Xfn>RMJ]8M>W:11
+Z94 IZI<^iRafcN5bAYz?Q=FaY0
+Z95 V@lQdLH7_h_g=Tg1H=[I833
+R3
+Z96 w1786530321
+Z97 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/edge_bit_cont.v
+Z98 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/edge_bit_cont.v
+L0 3
+R7
+r1
+31
+Z99 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/edge_bit_cont.v|
+R9
+Z100 !s108 1789737546.943000
+Z101 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/edge_bit_cont.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFIFO_MEM_CNTRL
+Z102 !s100 HA6Pg1NU[E]m^NR7<R3cK0
+Z103 IijHfX4mB_[GTEMS@PDjQ>2
+Z104 VNC<iB55k47naUNiBMEzRN0
+R3
+Z105 w1787760454
+Z106 8D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_MEM_CNTRL.v
+Z107 FD:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_MEM_CNTRL.v
+L0 3
+R7
+r1
+31
+Z108 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_MEM_CNTRL.v|
+R9
+Z109 n@f@i@f@o_@m@e@m_@c@n@t@r@l
+Z110 !s108 1789737549.385000
+Z111 !s107 D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_MEM_CNTRL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFIFO_RD
+Z112 !s100 NfZbkRECzKLgPo:X[Sm8F2
+Z113 Il>6H`k`Mh3^lF]Q4]I9jL2
+Z114 V>i:J]VdYMU>ZZ3lc:7X^k2
+R3
+Z115 w1787760542
+Z116 8D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_RD.v
+Z117 FD:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_RD.v
+L0 3
+R7
+r1
+31
+Z118 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_RD.v|
+R9
+Z119 n@f@i@f@o_@r@d
+!i10b 1
+!s85 0
+Z120 !s108 1789737549.523000
+Z121 !s107 D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_RD.v|
+!s101 -O0
+vFIFO_WR
+!i10b 1
+Z122 !s100 Lo2I4E<5>4:=[X9L<10?l1
+Z123 IOONZ=lko=YTc4fa71Y6NF2
+Z124 VePkBJKZIWE@bXi4KhlGY@2
+R3
+Z125 w1787843244
+Z126 8D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_WR.v
+Z127 FD:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_WR.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1789737549.658000
+!s107 D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_WR.v|
+Z128 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/FIFO_ASYNC.v/FIFO_WR.v|
+!s101 -O0
+R9
+Z129 n@f@i@f@o_@w@r
+vFSM
+Z130 !s100 <G20Hd1MN;10i[;nOVHUe3
+Z131 IRA`EaLkIbdC7NaWL:8Zih1
+Z132 V4MBE5UE^W>j=PTngoMVmR1
+R3
+Z133 w1789409173
+Z134 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/FSM.v
+Z135 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/FSM.v
+L0 3
+R7
+r1
+31
+Z136 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/FSM.v|
+R9
+Z137 n@f@s@m
+Z138 !s108 1789737548.051000
+Z139 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/FSM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFSM_RX
+Z140 !s100 [dHdiI8522j>WcG]]Sfil0
+Z141 IoS::8o?2z7=eGz?nhBg]C2
+Z142 Vn>:`4gRdM`5cZ4ldikPM22
+R3
+Z143 w1789411983
+Z144 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/FSM_RX.v
+Z145 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/FSM_RX.v
+L0 3
+R7
+r1
+31
+Z146 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/FSM_RX.v|
+R9
+Z147 n@f@s@m_@r@x
+Z148 !s108 1789737547.072000
+Z149 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/FSM_RX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux
+Z150 !s100 X2Kb;KW?e6UQ0UBUd?Y?<0
+Z151 I5c9Td07dF]9aLD>?E[iXQ0
+Z152 V=1T`_eb?79XWl<i5gZ[;H3
+R3
+Z153 w1785421993
+Z154 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/Mux.v
+Z155 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/Mux.v
+L0 3
+R7
+r1
+31
+Z156 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/Mux.v|
+R9
+n@mux
+Z157 !s108 1789737548.182000
+Z158 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/Mux.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2X1
+Z159 !s100 ilNRSU^6`fcW8>_TU0b760
+Z160 IU1UnYZa8=oHkXg;K9GSoL0
+Z161 VL@L51McA`QJ[UG8R270aG0
+R3
+Z162 w1649939578
+Z163 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/mux2X1.v
+Z164 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/mux2X1.v
+L0 2
+R7
+r1
+31
+Z165 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/mux2X1.v|
+R9
+Z166 nmux2@x1
+Z167 !s108 1789737548.351000
+Z168 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/mux2X1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vParity_Calc
+Z169 !s100 [0;ZIgYLZUc18P>8f7Q7M2
+Z170 I1Xh<lQbJjIKnJNBQ5lMbZ1
+Z171 V4;J=3cdk9X4UJOKRFF2oj1
+R3
+Z172 w1785444409
+Z173 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/Parity_Calc.v
+Z174 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/Parity_Calc.v
+L0 3
+R7
+r1
+31
+Z175 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/Parity_Calc.v|
+R9
+Z176 n@parity_@calc
+Z177 !s108 1789737548.541000
+Z178 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/Parity_Calc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vparity_check
+Z179 !s100 3EVm`igh>kXT9SA99aNIg1
+Z180 IBnJ[=WYWEc2RUCUQbQ@[j1
+Z181 VBAGgMLVlXm@6FQQiYo]T:0
+R3
+Z182 w1786549754
+Z183 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/parity_check.v
+Z184 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/parity_check.v
+L0 3
+R7
+r1
+31
+Z185 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/parity_check.v|
+R9
+Z186 !s108 1789737547.200000
+Z187 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/parity_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPULSE_GEN
+Z188 !s100 Ub<YlQ18P?kb]PAcN<@KU2
+Z189 ICmBECj7nm4]8=PITYSj^>3
+Z190 VDlI9cmObXkSRQI;?RCcgV2
+R3
+Z191 w1789389167
+Z192 8D:/Shahoda/el temsah/Final_System/PULSE_GEN.v
+Z193 FD:/Shahoda/el temsah/Final_System/PULSE_GEN.v
+L0 4
+R7
+r1
+31
+Z194 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/PULSE_GEN.v|
+R9
+Z195 n@p@u@l@s@e_@g@e@n
+Z196 !s108 1789737545.704000
+Z197 !s107 D:/Shahoda/el temsah/Final_System/PULSE_GEN.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vREG_file
+Z198 !s100 [h>gnKN1iF?MkjA0eBYjH3
+Z199 INP84Jhc;lGD1>E7@:U16T2
+Z200 VbIIVQHBiJY3hEBU;jAAzW0
+R3
+Z201 w1789387455
+Z202 8D:/Shahoda/el temsah/Final_System/REG_file.v
+Z203 FD:/Shahoda/el temsah/Final_System/REG_file.v
+L0 3
+R7
+r1
+31
+Z204 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/REG_file.v|
+R9
+Z205 n@r@e@g_file
+Z206 !s108 1789737545.884000
+Z207 !s107 D:/Shahoda/el temsah/Final_System/REG_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRST_SYNC
+Z208 !s100 6z3_X_2c6m0hMM]><ES043
+Z209 IV[M2`mSd;Sa7kZ;9Uf?Hc1
+Z210 VU_z[SGiEo]BO;=d0=MI>g2
+R3
+Z211 w1789387781
+Z212 8D:/Shahoda/el temsah/Final_System/RST_SYNC.v
+Z213 FD:/Shahoda/el temsah/Final_System/RST_SYNC.v
+L0 3
+R7
+r1
+31
+Z214 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/RST_SYNC.v|
+R9
+Z215 n@r@s@t_@s@y@n@c
+Z216 !s108 1789737546.167000
+Z217 !s107 D:/Shahoda/el temsah/Final_System/RST_SYNC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSerializer
+Z218 !s100 e_?gGAD0YS>:]SzjbOcFB0
+Z219 I^J;X`g;n]:]^O=[oVU=S_1
+Z220 Vg`43e51DD3jBNR7JRXi7k2
+R3
+Z221 w1785438592
+Z222 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/Serializer.v
+Z223 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/Serializer.v
+L0 3
+R7
+r1
+31
+Z224 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/Serializer.v|
+R9
+Z225 n@serializer
+Z226 !s108 1789737548.680000
+Z227 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/Serializer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vStart_check
+Z228 !s100 9:H:cC7ef;Sk_DST:BN]W1
+Z229 IJCd2Y7KI5IOhSY1oBc[S>2
+Z230 VGnYHS]Ld3Qo<]YF8fnngl2
+R3
+Z231 w1789410854
+Z232 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/Start_check.v
+Z233 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/Start_check.v
+L0 3
+R7
+r1
+31
+Z234 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/Start_check.v|
+R9
+Z235 n@start_check
+Z236 !s108 1789737547.332000
+Z237 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/Start_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vStop_check
+Z238 !s100 M:PXZ=<]:5XbFP[Nb`:mJ1
+Z239 IV4C33R;6CXc`2d_PiK39o1
+Z240 V^3e3aPRP]C6hlFN:bXN9Y1
+R3
+Z241 w1789410782
+Z242 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/Stop_check.v
+Z243 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/Stop_check.v
+L0 3
+R7
+r1
+31
+Z244 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/Stop_check.v|
+R9
+Z245 n@stop_check
+Z246 !s108 1789737547.601000
+Z247 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/Stop_check.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_CTRL
+Z248 I<HB][oaVK_6XmFg:aY0ii1
+Z249 Vj67cKgcGd=Ji<?BeFfWlD3
+R3
+Z250 w1789737539
+Z251 8D:/Shahoda/el temsah/Final_System/CTRL_SYS.v
+Z252 FD:/Shahoda/el temsah/Final_System/CTRL_SYS.v
+L0 3
+R7
+r1
+31
+Z253 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/CTRL_SYS.v|
+R9
+Z254 n@s@y@s_@c@t@r@l
+Z255 !s100 QelViDD123=_ZjVUW6zkJ0
+Z256 !s108 1789737545.444000
+Z257 !s107 D:/Shahoda/el temsah/Final_System/CTRL_SYS.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_TOP
+Z258 !s100 ?kUFQFL]?j1>AjFQVGX:=2
+Z259 IKkeeODSDh=JAGk7:;k@523
+Z260 VkmR[CHUk<0YLNzJZVIIB73
+R3
+Z261 w1789683649
+Z262 8D:/Shahoda/el temsah/Final_System/SYS_TOP.v
+Z263 FD:/Shahoda/el temsah/Final_System/SYS_TOP.v
+L0 3
+R7
+r1
+31
+Z264 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/SYS_TOP.v|
+R9
+Z265 n@s@y@s_@t@o@p
+Z266 !s108 1789737546.343000
+Z267 !s107 D:/Shahoda/el temsah/Final_System/SYS_TOP.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSYS_TOP_TB
+Z268 !s100 jKOA?MoK?QiM4l0>]@IfH1
+Z269 IJ2@Ngd`[^aga5e6ZH[IkC1
+Z270 V4Ba2ig[jZRNlcTn1`9Sda1
+R3
+Z271 w1789685920
+Z272 8D:/Shahoda/el temsah/Final_System/SYS_TOP_TB.v
+Z273 FD:/Shahoda/el temsah/Final_System/SYS_TOP_TB.v
+L0 5
+R7
+r1
+31
+Z274 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/SYS_TOP_TB.v|
+R9
+Z275 n@s@y@s_@t@o@p_@t@b
+Z276 !s108 1789737546.473000
+Z277 !s107 D:/Shahoda/el temsah/Final_System/SYS_TOP_TB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_RX
+Z278 !s100 K9F3dkIEbR8A]mTl=jNb42
+Z279 ITYK:=z>gIf8fCmU9T]g@:2
+Z280 V[RKO1lmgM?L0Tc?OZdbAR3
+R3
+Z281 w1789578741
+Z282 8D:/Shahoda/el temsah/Final_System/UART/UART_RX/UART_RX.v
+Z283 FD:/Shahoda/el temsah/Final_System/UART/UART_RX/UART_RX.v
+L0 3
+R7
+r1
+31
+Z284 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_RX/UART_RX.v|
+R9
+Z285 n@u@a@r@t_@r@x
+Z286 !s108 1789737547.923000
+Z287 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_RX/UART_RX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_TOP
+Z288 !s100 =`nNGoN@E`l_]`L>oU<I=0
+Z289 IDF8Hh;m@KIoI@YX4=29el1
+Z290 VaXV16JXLPIRWZ8SUhdU]X1
+R3
+Z291 w1789597212
+Z292 8D:/Shahoda/el temsah/Final_System/UART/UART.v
+Z293 FD:/Shahoda/el temsah/Final_System/UART/UART.v
+L0 2
+R7
+r1
+31
+Z294 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART.v|
+R9
+Z295 n@u@a@r@t_@t@o@p
+Z296 !s108 1789737548.951000
+Z297 !s107 D:/Shahoda/el temsah/Final_System/UART/UART.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_TX
+Z298 !s100 DV;:IKO`JNB0PbS@R<GhG2
+Z299 I^:5LBOQc:G9dQ<2<8d>l01
+Z300 VViJ6a4Ai8PA<UI3oY;W@03
+R3
+Z301 w1789409990
+Z302 8D:/Shahoda/el temsah/Final_System/UART/UART_TX/UART_TX.v
+Z303 FD:/Shahoda/el temsah/Final_System/UART/UART_TX/UART_TX.v
+L0 3
+R7
+r1
+31
+Z304 !s90 -reportprogress|300|-work|work|D:/Shahoda/el temsah/Final_System/UART/UART_TX/UART_TX.v|
+R9
+Z305 n@u@a@r@t_@t@x
+Z306 !s108 1789737548.817000
+Z307 !s107 D:/Shahoda/el temsah/Final_System/UART/UART_TX/UART_TX.v|
+!i10b 1
+!s85 0
+!s101 -O0

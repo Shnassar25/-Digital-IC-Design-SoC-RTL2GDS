@@ -1,0 +1,4 @@
+Ac_conv02@@SYS_TOP.fifo_async.u_sync_w2r.sync_reg[0][4:0]@@final_system.sgdc:62
+Ac_conv02@@SYS_TOP.D_SYNC.SYNC_BUS[7:0],SYS_TOP.D_SYNC.sync_enable_reg[0]@@final_system.sgdc:64
+Ac_conv02@@SYS_TOP.fifo_async.u_sync_r2w.sync_reg[0][4:0]@@final_system.sgdc:64
+Ac_conv01@@SYS_TOP.D_SYNC.SYNC_BUS[7:0],SYS_TOP.fifo_async.u_sync_r2w.sync_reg[0][4:0],SYS_TOP.D_SYNC.sync_enable_reg[0]@@final_system.sgdc:64

@@ -1,0 +1,15 @@
+
+#CELL_FIELDS : COLUMN_X_PROBE_VAL, CELL_FOREGROUND_COLOR,  CELL_TOOLTIP
+#CELL_FIELDS_SEPARATOR : @@
+
+#CrossProbeTag : ,,,DomainMatrix_SS,DomainMatrix_SS,DomainMatrix_SS,DomainMatrix_SS,DomainMatrix_SS,DomainMatrix_SS
+#define hash CELL_TOOLTIP
+ ce_TT, One or both clock(s) is/are part of cyclic conflict
+ nc_TT, No Domain could be inferred for one or both of the clocks. 
+#end hash
+,,,,,,,,
+,,,140,,141@@@@Inferred Directly from SDC constraint,142@@@@Inferred Directly from SDC constraint,143@@@@Inferred Directly from SDC constraint,144@@@@Inferred Directly from SDC constraint
+,,,145,146@@@@Inferred Directly from SDC constraint,,147@@@@Inferred Directly from SDC constraint,148@@@@Inferred Directly from SDC constraint,149@@@@Inferred Directly from SDC constraint
+,,,150,151@@@@Inferred Directly from SDC constraint,152@@@@Inferred Directly from SDC constraint,,153@@@@Inferred Directly from SDC constraint,154@@@@Inferred Directly from SDC constraint
+,,,155,156@@@@Inferred Directly from SDC constraint,157@@@@Inferred Directly from SDC constraint,158@@@@Inferred Directly from SDC constraint,,@@@@Inferred Directly from SDC constraint
+,,,159,160@@@@Inferred Directly from SDC constraint,161@@@@Inferred Directly from SDC constraint,162@@@@Inferred Directly from SDC constraint,@@@@Inferred Directly from SDC constraint,

@@ -1,0 +1,177 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sun Sep 27 03:48:05 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: control/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: alu/OUT_VALID_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  control/current_state_reg[3]/CK (DFFRQX2M)              0.00       0.00 r
+  control/current_state_reg[3]/Q (DFFRQX2M)               0.43       0.43 r
+  control/U47/Y (NOR2X2M)                                 0.10       0.52 f
+  control/U55/Y (NAND3X2M)                                0.10       0.63 r
+  control/U8/Y (OAI21BX1M)                                0.16       0.78 f
+  control/ALU_EN (SYS_CTRL_WIDTH8_ADDR4)                  0.00       0.78 f
+  alu/EN_alu (Alu_16_bit_OPER_WIDTH8_OUT_WIDTH16_ALU_FUN_WIDTH4)
+                                                          0.00       0.78 f
+  alu/OUT_VALID_reg/D (DFFRQX2M)                          0.00       0.78 f
+  data arrival time                                                  0.78
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  alu/OUT_VALID_reg/CK (DFFRQX2M)                         0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.73
+
+
+  Startpoint: control/reg_addr_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: control/reg_addr_reg[3]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  control/reg_addr_reg[3]/CK (DFFRX1M)                    0.00       0.00 r
+  control/reg_addr_reg[3]/QN (DFFRX1M)                    0.35       0.35 r
+  control/U108/Y (OAI22X1M)                               0.09       0.44 f
+  control/reg_addr_reg[3]/D (DFFRX1M)                     0.00       0.44 f
+  data arrival time                                                  0.44
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  control/reg_addr_reg[3]/CK (DFFRX1M)                    0.00       0.10 r
+  library hold time                                      -0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+  Startpoint: CLK_DIV_TX/q1_reg
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: CLK_DIV_TX/q1_reg
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock UART_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CLK_DIV_TX/q1_reg/CK (DFFRX1M)           0.00       0.00 r
+  CLK_DIV_TX/q1_reg/QN (DFFRX1M)           0.33       0.33 r
+  CLK_DIV_TX/U19/Y (MXI2X1M)               0.09       0.42 f
+  CLK_DIV_TX/q1_reg/D (DFFRX1M)            0.00       0.42 f
+  data arrival time                                   0.42
+
+  clock UART_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  CLK_DIV_TX/q1_reg/CK (DFFRX1M)           0.00       0.10 r
+  library hold time                       -0.02       0.08
+  data required time                                  0.08
+  -----------------------------------------------------------
+  data required time                                  0.08
+  data arrival time                                  -0.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: uart/u_uart_rx/deserializer/shift_reg_reg[7]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: uart/u_uart_rx/deserializer/shift_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart/u_uart_rx/deserializer/shift_reg_reg[7]/CK (DFFRX1M)
+                                                          0.00       0.00 r
+  uart/u_uart_rx/deserializer/shift_reg_reg[7]/QN (DFFRX1M)
+                                                          0.34       0.34 r
+  uart/u_uart_rx/deserializer/U10/Y (OAI22X1M)            0.07       0.41 f
+  uart/u_uart_rx/deserializer/shift_reg_reg[6]/D (DFFRX1M)
+                                                          0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  uart/u_uart_rx/deserializer/shift_reg_reg[6]/CK (DFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: fifo_async/u_sync_w2r/sync_reg_reg[0][0]
+              (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Endpoint: fifo_async/u_sync_w2r/sync_reg_reg[1][0]
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_TX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_async/u_sync_w2r/sync_reg_reg[0][0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  fifo_async/u_sync_w2r/sync_reg_reg[0][0]/Q (DFFRQX2M)
+                                                          0.45       0.45 f
+  fifo_async/u_sync_w2r/sync_reg_reg[1][0]/D (DFFRQX2M)
+                                                          0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock UART_TX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  fifo_async/u_sync_w2r/sync_reg_reg[1][0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+1

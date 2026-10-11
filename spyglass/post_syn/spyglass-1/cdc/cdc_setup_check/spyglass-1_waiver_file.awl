@@ -1,0 +1,2 @@
+waive -rule {  {Setup_port01}  }  -comment {Created by ICer on 21-Sep-2026 03:14:55}  -exact 
+waive -rule {  {Clock_check07}  }  -comment {Created by ICer on 21-Sep-2026 03:18:41}  -exact 
