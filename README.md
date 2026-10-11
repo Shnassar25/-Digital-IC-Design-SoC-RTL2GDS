@@ -365,7 +365,7 @@ Sequential elements replaced with **scan flip-flops** forming structured scan ch
 | Buffers / Inverters | 285 | 1107 | ⬆️ |
 | Combinational Area | 14265.13 | 21284.15 | ⬆️ |
 | Non-combinational Area | 11565.78 | 14715.81 | ⬆️ |
-| 🏆 **Total Cell Area** | **25830.92** | **35999.96** | **⬆️ ≈ +39.4%** |
+|  **Total Cell Area** | **25830.92** | **35999.96** | **⬆️ ≈ +39.4%** |
 | ⚡ Switching Power | 7.43e-03 | 0.200 | ⬆️ |
 | 🔌 Internal Power | 0.260 | 7.32e-02 | ⬇️ |
 | 💧 Leakage Power | 1.44e+07 | 2.19e+07 | ⬆️ |
@@ -408,15 +408,15 @@ Flow: **Floorplan → Placement → CTS → Global/Detailed Routing**
 
 | 🛠️ Stage | 🧰 Tool |
 |---|---|
-| 💻 RTL Design | Verilog HDL |
-| 🧪 Simulation | ModelSim |
-| 🖼️ RTL Schematics | Xilinx Vivado |
-| 🧹 Lint / CDC | Synopsys SpyGlass |
-| 🏭 Synthesis & DFT | Synopsys Design Compiler |
-| ✅ Equivalence Checking | Synopsys Formality |
-| 🧱 Place & Route | Physical design tool (floorplan → routing) |
-| ⚡ Power Analysis | Synopsys PrimeTime |
-| 📚 Library | TSMC 130nm (`scmetro_tsmc_cl013g`) |
+|  RTL Design | Verilog HDL |
+|  Simulation | ModelSim |
+|  RTL Schematics | Xilinx Vivado |
+|  Lint / CDC | Synopsys SpyGlass |
+|  Synthesis & DFT | Synopsys Design Compiler |
+|  Equivalence Checking | Synopsys Formality |
+|  Place & Route | Physical design tool (floorplan → routing) |
+|  Power Analysis | Synopsys PrimeTime |
+|  Library | TSMC 130nm (`scmetro_tsmc_cl013g`) |
 
 ---
 
@@ -444,15 +444,15 @@ Flow: **Floorplan → Placement → CTS → Global/Detailed Routing**
 
 This project delivers a complete ASIC design flow, from micro-architecture and RTL to a routed physical layout.
 
-| 🏆 Milestone | ✅ Status |
+|  Milestone | ✅ Status |
 |---|:---:|
-| 🏗️ Architecture & Integration (UART, Async FIFO, RegFile, ALU, FSM) | ✅ |
-| 🧪 Self-checking functional verification | ✅ |
-| ⏱️ Timing closure (**+4.10 ns** setup slack) | ✅ |
-| ✅ Formal equivalence (Post-DFT & Post-PNR) | ✅ |
-| 🔍 Scan-chain DFT insertion | ✅ |
-| 🧱 Floorplan, CTS and routing | ✅ |
-| ⏱️ Gate-level simulation with SDF | ✅ |
+|  Architecture & Integration (UART, Async FIFO, RegFile, ALU, FSM) | ✅ |
+|  Self-checking functional verification | ✅ |
+|  Timing closure (**+4.10 ns** setup slack) | ✅ |
+|  Formal equivalence (Post-DFT & Post-PNR) | ✅ |
+|  Scan-chain DFT insertion | ✅ |
+|  Floorplan, CTS and routing | ✅ |
+|  Gate-level simulation with SDF | ✅ |
 
 ---
 
