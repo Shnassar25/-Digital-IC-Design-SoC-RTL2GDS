@@ -55,13 +55,13 @@ The system works as a dedicated hardware processing unit that:
 
 | 🔹 Feature | 📝 Description |
 |---|---|
-| 🕐 **Dual-Clock Domains** | `REF_CLK` = **50 MHz** and `UART_CLK` = **3.6864 MHz** with safe CDC |
-| ➕ **ALU** | Arithmetic, logical, comparison and shift operations |
-| 🗄️ **Register File** | 16 × 8-bit registers, with reserved config/operand registers |
-| 📡 **UART** | TX + RX with parity (even/odd), prescaler and error detection |
-| 🔋 **Power Management** | Clock gating for the ALU (ICG cell) |
-| 🔄 **Synchronization** | Reset synchronizers, data synchronizer, pulse generator, Async FIFO |
-| 🛡️ **Robust RX** | Oversampling, parity / stop-bit / start-glitch detection |
+|  **Dual-Clock Domains** | `REF_CLK` = **50 MHz** and `UART_CLK` = **3.6864 MHz** with safe CDC |
+|  **ALU** | Arithmetic, logical, comparison and shift operations |
+|  **Register File** | 16 × 8-bit registers, with reserved config/operand registers |
+|  **UART** | TX + RX with parity (even/odd), prescaler and error detection |
+|  **Power Management** | Clock gating for the ALU (ICG cell) |
+|  **Synchronization** | Reset synchronizers, data synchronizer, pulse generator, Async FIFO |
+|  **Robust RX** | Oversampling, parity / stop-bit / start-glitch detection |
 
 ---
 
@@ -75,18 +75,18 @@ flowchart LR
     UART -- TX_OUT --> TB
 
     subgraph D2["🔵 Domain 2 — UART_CLK 3.6864 MHz"]
-        UART["📡 UART<br/>TX / RX"]
-        CD1["⏲️ Clock Divider RX"]
-        CD2["⏲️ Clock Divider TX"]
-        RS2["🔁 RST_SYNC_2"]
+        UART[" UART<br/>TX / RX"]
+        CD1[" Clock Divider RX"]
+        CD2[" Clock Divider TX"]
+        RS2[" RST_SYNC_2"]
     end
 
     subgraph D1["🟡 Domain 1 — REF_CLK 50 MHz"]
-        SYS["🧠 SYS_CTRL (FSM)"]
-        RF["🗄️ RegFile"]
-        ALU["➕ ALU"]
-        CG["🔋 Clock Gating"]
-        RS1["🔁 RST_SYNC_1"]
+        SYS[" SYS_CTRL (FSM)"]
+        RF[" RegFile"]
+        ALU[" ALU"]
+        CG[" Clock Gating"]
+        RS1[" RST_SYNC_1"]
     end
 
     UART -- "RX data" --> DS["🔄 Data Synchronizer"] --> SYS
@@ -102,15 +102,15 @@ flowchart LR
 ```
 
 ### 🟡 Clock Domain 1 — `REF_CLK` (50 MHz)
-- 🗄️ **RegFile** — storage and system configuration
-- ➕ **ALU** — executes math/logic instructions
-- 🔋 **Clock Gating** — controls `ALU_CLK` to save dynamic power
-- 🧠 **SYS_CTRL** — central FSM (command decode, register access, data flow)
+-  **RegFile** — storage and system configuration
+-  **ALU** — executes math/logic instructions
+-  **Clock Gating** — controls `ALU_CLK` to save dynamic power
+-  **SYS_CTRL** — central FSM (command decode, register access, data flow)
 
 ### 🔵 Clock Domain 2 — `UART_CLK` (3.6864 MHz)
-- 📡 **UART_TX / UART_RX** — serial ↔ parallel conversion
-- ⏲️ **Clock Dividers** — generate TX/RX clocks from the configured ratios
-- 🔄 **Pulse Gen / Data Sync / Async FIFO** — safe bridging between both domains
+-  **UART_TX / UART_RX** — serial ↔ parallel conversion
+-  **Clock Dividers** — generate TX/RX clocks from the configured ratios
+-  **Pulse Gen / Data Sync / Async FIFO** — safe bridging between both domains
 
 ---
 
@@ -366,10 +366,10 @@ Sequential elements replaced with **scan flip-flops** forming structured scan ch
 | Combinational Area | 14265.13 | 21284.15 | ⬆️ |
 | Non-combinational Area | 11565.78 | 14715.81 | ⬆️ |
 |  **Total Cell Area** | **25830.92** | **35999.96** | **⬆️ ≈ +39.4%** |
-| ⚡ Switching Power | 7.43e-03 | 0.200 | ⬆️ |
-| 🔌 Internal Power | 0.260 | 7.32e-02 | ⬇️ |
-| 💧 Leakage Power | 1.44e+07 | 2.19e+07 | ⬆️ |
-| 🔋 **Total Power** | **0.282** | **0.296** | ⬆️ ≈ +5% |
+|  Switching Power | 7.43e-03 | 0.200 | ⬆️ |
+|  Internal Power | 0.260 | 7.32e-02 | ⬇️ |
+|  Leakage Power | 1.44e+07 | 2.19e+07 | ⬆️ |
+|  **Total Power** | **0.282** | **0.296** | ⬆️ ≈ +5% |
 
 > [!NOTE]
 > The structural DFT insertion was verified with Formality (see [Formal Verification](#-formal-verification-lec)) — zero functional corruption.
