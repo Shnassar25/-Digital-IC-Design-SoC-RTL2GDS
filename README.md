@@ -28,3 +28,25 @@ The top-level chip (`SYS_TOP`) integrates multiple hardware execution blocks coo
                |         ^                                      |
                |         |------------ Control FSM -------------|
                +------------------------------------------------+
+
+🧩 Sub-System Breakdown:
+📡 UART Interface: Enables asynchronous serial communication for external data transfer.
+
+⏳ Asynchronous FIFO: Facilitates safe Multi-Clock Domain Crossing (CDC) and data buffering.
+
+📝 Register File: Holds active configuration control, operational parameters, and state status.
+
+🧮 Arithmetic Logic Unit (ALU): Performs high-throughput data processing and logical execution.
+
+🎮 Central Control FSM: Manages state routing, system synchronization, and datapath execution
+
+🛠️ EDA Toolchain & Technology Flow
+| Design Phase | Tool Standard | Technology Node / Standard |
+| :--- | :--- | :--- |
+| **RTL & Testbench** | Verilog HDL | SystemVerilog Standards |
+| **Functional Simulation** | QuestaSim / ModelSim | IEEE Standard Verilog |
+| **Linting & CDC Verification** | Synopsys SpyGlass | Structural Rule Checking |
+| **Logic Synthesis & Timing** | Synopsys Design Compiler (DC) | **TSMC 130nm** (`scmetro_tsmc_cl013g_rvt`) |
+| **Design for Testability** | Synopsys DFT Compiler | Scan Insertion & Fault Modeling |
+| **Formal Logic Equivalence** | Synopsys Formality | Pre/Post-DFT/PNR Equivalence |
+| **Physical Design (PNR)** | Innovus / IC Compiler | Floorplanning, CTS, & Routing |
